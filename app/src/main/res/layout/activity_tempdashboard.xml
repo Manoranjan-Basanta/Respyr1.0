@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/result_bg"
+    android:id="@+id/main"
+    tools:context=".reading.Tempdashboard">
+
+    <ScrollView
+        android:id="@+id/scroll_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_log"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:visibility="gone" />
+            <include layout="@layout/result_page_appbar"/>
+            <include layout="@layout/result_page_health_score" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_diabetic">
+                <include layout="@layout/result_page_diabetes" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_vital">
+                <include layout="@layout/result_page_vital" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_blow">
+                <include layout="@layout/result_page_blow" />
+            </LinearLayout>
+            <include layout="@layout/result_page_suggestion_card" />
+            <LinearLayout
+                android:id="@+id/card_life_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include layout="@layout/result_page_lifestyle_score" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_nutrition">
+                <include layout="@layout/result_page_nutrition_analysis"/>
+            </LinearLayout>
+            <include layout="@layout/result_page_bmi" />
+            <include layout="@layout/suggestions_mini" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/layout_start"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/start_lg_1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:visibility="gone"
+        android:orientation="horizontal"/>
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="282dp"
+    android:layout_height="282dp"
+    android:background="@drawable/pushup"
+    android:paddingVertical="15dp"
+    android:paddingHorizontal="26dp"
+    android:gravity="bottom"
+    android:scaleType="centerCrop"
+    android:adjustViewBounds="true"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical"
+    android:id="@+id/layout_work_out_number">
+
+    <TextView
+        android:id="@+id/txt_work_out_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="40sp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:includeFontPadding="false"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/txt_work_out_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modified\nPush-ups"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:includeFontPadding="false"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/txt_work_out_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18 minutes"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto"
+        android:includeFontPadding="false"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

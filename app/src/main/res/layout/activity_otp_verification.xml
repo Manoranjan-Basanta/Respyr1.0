@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".authentication.login.OtpVerification">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="#F9FCFF"
+        android:orientation="vertical"
+        android:paddingVertical="9dp"
+        android:paddingHorizontal="17dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/respyr_logo"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="bottom"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="25sp"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/dark_primary" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OTP"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="25sp"
+                    android:paddingHorizontal="5dp"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/primary"/>
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/holding_phone1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:visibility="gone"
+        android:fontFamily="@font/mulish"
+        android:textSize="15sp"
+        android:paddingHorizontal="5dp"
+        android:includeFontPadding="false"
+        android:textColor="@color/grey"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingHorizontal="13dp"
+        android:orientation="vertical"
+        android:paddingVertical="16dp">
+
+        <TextView
+            android:id="@+id/txt_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:fontFamily="@font/mulish"
+            android:textSize="15sp"
+            android:paddingHorizontal="5dp"
+            android:includeFontPadding="false"
+            android:textColor="@color/grey"/>
+
+        <com.gne.www.lib.PinView
+            android:id="@+id/otp_view"
+            android:layout_width="wrap_content"
+            android:layout_height="61dp"
+            app:inputType="number"
+            app:isPassword="false"
+            app:passwordToggleColor="@color/transparent"
+            app:passwordToggleSize="0dp"
+            app:pinBackground="@drawable/otp_bg"
+            app:pinCount="4"
+            app:pinSize="50dp"
+            android:theme="@style/OTPText"
+            android:layout_marginTop="28dp"
+            app:pinTextSize="8sp"
+            app:showDividers="end"
+            app:showPasswordToggle="false"
+            app:textColor="#252525" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center"
+            android:layout_marginTop="63dp">
+
+            <RelativeLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp">
+                <antonkozyriatskyi.circularprogressindicator.CircularProgressIndicator
+                    android:id="@+id/progress_otp_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    app:progressBackgroundStrokeWidth="3dp"
+                    app:progressBackgroundColor="#DAEBFF"
+                    app:progressColor="@color/primary"
+                    app:progressStrokeWidth="3dp"
+                    app:textColor="@color/transparent"
+                    />
+
+                <TextView
+                    android:id="@+id/txts_otp_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/roboto"
+                    android:text="30"
+                    android:textColor="@color/primary"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+            <Space
+                android:layout_width="25dp"
+                android:layout_height="0dp"/>
+            <Button
+                android:id="@+id/button_resend_otp"
+                android:layout_width="240dp"
+                android:layout_height="61dp"
+                android:text="Resend OTP"
+                android:background="@drawable/eclips1"
+                android:backgroundTint="#F0F0F0"
+                android:textSize="12sp"
+                android:textColor="#535359"
+                android:fontFamily="@font/mulish"
+                android:textAllCaps="false"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/porofile_footer_buttons"/>
+
+</LinearLayout>

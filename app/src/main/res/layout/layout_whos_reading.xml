@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/transparent"
+    android:padding="10sp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectange_rad15"
+        android:backgroundTint="@color/white"
+        android:paddingBottom="48dp"
+        android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="end"
+            android:backgroundTint="@color/transparent"
+            android:src="@drawable/close"
+            android:layout_margin="5dp"
+            app:tint="@color/black" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Who is taking the test?"
+                android:fontFamily="@font/poppins_semibold"
+                android:includeFontPadding="false"
+                android:textSize="25sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select your self or add a profile that can\nbe personalized to you "
+                android:fontFamily="@font/mulish"
+                android:includeFontPadding="false"
+                android:textSize="15sp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp">
+                <Button
+                    android:id="@+id/button_my_self"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/eclips1"
+                    android:backgroundTint="@color/primary"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/mulish"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:paddingHorizontal="20dp"
+                    android:text="Test my self"/>
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="0dp"/>
+                <Button
+                    android:id="@+id/button_my_friend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_outline_primary"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/mulish"
+                    android:textSize="15sp"
+                    android:textColor="@color/primary"
+                    android:paddingHorizontal="20dp"
+                    android:text="Test for my friend"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

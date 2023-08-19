@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="7dp">
+    <LinearLayout
+        android:id="@+id/searched_food_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search Result"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins_semibold"
+            android:includeFontPadding="false"
+            android:textColor="@color/black"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_search_food_items"
+            android:layout_width="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+   <LinearLayout
+       android:id="@+id/ll_food_not_found"
+       android:layout_width="match_parent"
+       android:layout_height="160dp"
+       android:gravity="center"
+       android:orientation="vertical"
+       android:background="@drawable/rectange_rad15"
+       android:backgroundTint="#F0F0F0"
+       android:layout_marginBottom="40dp"
+       android:visibility="gone"
+       android:paddingVertical="20dp">
+       <TextView
+           android:id="@+id/txt_not_found_food_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="No result found for :"
+           android:fontFamily="@font/poppins_semibold"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:textSize="15sp"
+           android:textColor="@color/black"
+           android:visibility="visible" />
+       <Space
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1"/>
+       <TextView
+           android:id="@+id/txt_food_not_found"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Save as New Dish"
+           android:fontFamily="@font/mulish_semibold"
+           android:layout_gravity="center"
+           android:background="@drawable/button_not_found"
+           android:textAppearance="?android:attr/textAppearanceMedium"
+           android:gravity="center"
+           android:drawableRight="@drawable/arrow_right1"
+           android:textSize="12sp"
+           android:paddingHorizontal="12dp"
+           android:paddingVertical="7dp"
+           />
+   </LinearLayout>
+
+</LinearLayout>

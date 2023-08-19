@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".authentication.profile_creation.medical_data.Lipid">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/dark1"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/user_profile_create_progress"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_shape_one">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="34dp"
+                        android:paddingTop="50dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/mulish"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="MEDICAL HISTORY"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="27.5dp"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="3/6"
+                            android:textColor="@color/primary"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            android:layout_marginTop="33dp"
+                            android:layout_marginBottom="21dp"
+                            android:src="@drawable/lipid"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="Do you have lipid issues?"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/dark_primary"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:fontFamily="@font/mulish"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:textColor="@color/grey"
+                            android:text="This is used to get accurate health status"
+                            />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:gravity="center"
+                            android:layout_marginTop="24dp"
+                            android:layout_height="wrap_content">
+                            <RadioGroup
+                                android:id="@+id/tab1"
+                                android:layout_width="262dp"
+                                android:layout_height="47dp"
+                                android:orientation="horizontal"
+                                android:paddingHorizontal="6dp"
+                                android:gravity="center"
+                                android:background="@drawable/tab_outline_1">
+
+                                <RadioButton
+                                    android:id="@+id/yes"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="36dp"
+                                    android:background="@drawable/disease_tab"
+                                    android:button="@color/transparent"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:drawableLeft="@drawable/check_2"
+                                    android:checked="true"
+                                    android:paddingHorizontal="22dp"
+                                    android:fontFamily="@font/mulish"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/black"
+                                    android:text="Yes"/>
+                                <RadioButton
+                                    android:id="@+id/no"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="36dp"
+                                    android:background="@drawable/disease_tab"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:drawableLeft="@drawable/check_2"
+                                    android:checked="true"
+                                    android:textColor="@color/white"
+                                    android:paddingHorizontal="22dp"
+                                    android:fontFamily="@font/mulish"
+                                    android:textSize="15sp"
+                                    android:button="@color/transparent"
+                                    android:text="No"/>
+
+                            </RadioGroup>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="9dp"
+                        android:background="#E4F0FF"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="top|center"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="25dp"
+                        android:paddingVertical="27dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Blood Parameter"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:textSize="15sp"
+                            android:includeFontPadding="false"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fill in the data based on your latest blood test report"
+                            android:layout_marginTop="8dp"
+                            android:textSize="12sp"
+                            android:textColor="@color/grey"
+                            android:fontFamily="@font/mulish" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="189dp"
+                            android:background="@drawable/disease_card_shape_1"
+                            android:layout_marginTop="50dp"
+                            android:paddingVertical="22dp"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="16dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:gravity="top"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:id="@+id/txtd1"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:textSize="15sp"
+                                    android:includeFontPadding="false"
+                                    android:textColor="@color/black"/>
+                                <ImageButton
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:src="@drawable/info"
+                                    android:background="@color/transparent"/>
+                            </LinearLayout>
+
+                            <RadioGroup
+                                android:id="@+id/rg1"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginTop="27dp"
+                                android:orientation="horizontal"
+                                android:layout_weight="1">
+
+                                <RadioButton
+                                    android:id="@+id/rb1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:button="@color/transparent"
+                                    android:textSize="12sp"
+                                    android:gravity="center"
+                                    android:fontFamily="@font/mulish"
+                                    android:background="@drawable/disease_selector"
+                                    />
+                                <RadioButton
+                                    android:id="@+id/rb2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:button="@color/transparent"
+                                    android:textSize="12sp"
+                                    android:gravity="center"
+                                    android:fontFamily="@font/mulish"
+                                    android:background="@drawable/disease_selector"
+                                    />
+                                <RadioButton
+                                    android:id="@+id/rb3"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:button="@color/transparent"
+                                    android:textSize="12sp"
+                                    android:gravity="center"
+                                    android:background="@drawable/disease_selector"
+                                    android:fontFamily="@font/mulish"
+                                    />
+
+                            </RadioGroup>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="189dp"
+                            android:background="@drawable/disease_card_shape_1"
+                            android:layout_marginTop="30dp"
+                            android:paddingVertical="22dp"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="16dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:gravity="top"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:id="@+id/txtd2"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:textSize="15sp"
+                                    android:includeFontPadding="false"
+                                    android:textColor="@color/black"/>
+                                <ImageButton
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:src="@drawable/info"
+                                    android:background="@color/transparent"/>
+                            </LinearLayout>
+
+                            <RadioGroup
+                                android:id="@+id/rg2"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginTop="27dp"
+                                android:orientation="horizontal"
+                                android:layout_weight="1">
+
+                                <RadioButton
+                                    android:id="@+id/rb4"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:button="@color/transparent"
+                                    android:textSize="12sp"
+                                    android:gravity="center"
+                                    android:fontFamily="@font/mulish"
+                                    android:background="@drawable/disease_selector"
+                                    />
+                                <RadioButton
+                                    android:id="@+id/rb5"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:button="@color/transparent"
+                                    android:textSize="12sp"
+                                    android:gravity="center"
+                                    android:fontFamily="@font/mulish"
+                                    android:background="@drawable/disease_selector"
+                                    />
+                                <RadioButton
+                                    android:id="@+id/rb6"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:button="@color/transparent"
+                                    android:textSize="12sp"
+                                    android:gravity="center"
+                                    android:background="@drawable/disease_selector"
+                                    android:fontFamily="@font/mulish"
+                                    />
+
+                            </RadioGroup>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="189dp"
+                            android:background="@drawable/disease_card_shape_1"
+                            android:layout_marginTop="30dp"
+                            android:paddingVertical="22dp"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="16dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:gravity="top"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:id="@+id/txtd3"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:textSize="15sp"
+                                    android:includeFontPadding="false"
+                                    android:textColor="@color/black"/>
+                                <ImageButton
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:src="@drawable/info"
+                                    android:background="@color/transparent"/>
+                            </LinearLayout>
+
+                            <RadioGroup
+                                android:id="@+id/rg3"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginTop="27dp"
+                                android:orientation="horizontal"
+                                android:layout_weight="1">
+
+                                <RadioButton
+                                    android:id="@+id/rb7"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:button="@color/transparent"
+                                    android:textSize="12sp"
+                                    android:gravity="center"
+                                    android:fontFamily="@font/mulish"
+                                    android:background="@drawable/disease_selector"
+                                    />
+                                <RadioButton
+                                    android:id="@+id/rb8"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:button="@color/transparent"
+                                    android:textSize="12sp"
+                                    android:gravity="center"
+                                    android:fontFamily="@font/mulish"
+                                    android:background="@drawable/disease_selector"
+                                    />
+                                <RadioButton
+                                    android:id="@+id/rb9"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:button="@color/transparent"
+                                    android:textSize="12sp"
+                                    android:gravity="center"
+                                    android:background="@drawable/disease_selector"
+                                    android:fontFamily="@font/mulish"
+                                    />
+
+                            </RadioGroup>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="189dp"
+                            android:background="@drawable/disease_card_shape_1"
+                            android:layout_marginTop="30dp"
+                            android:paddingVertical="22dp"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="16dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:gravity="top"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:id="@+id/txtd4"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:textSize="15sp"
+                                    android:includeFontPadding="false"
+                                    android:textColor="@color/black"/>
+                                <ImageButton
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:src="@drawable/info"
+                                    android:background="@color/transparent"/>
+                            </LinearLayout>
+
+                            <RadioGroup
+                                android:id="@+id/rg4"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginTop="27dp"
+                                android:orientation="horizontal"
+                                android:layout_weight="1">
+
+                                <RadioButton
+                                    android:id="@+id/rb10"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:button="@color/transparent"
+                                    android:textSize="12sp"
+                                    android:gravity="center"
+                                    android:fontFamily="@font/mulish"
+                                    android:background="@drawable/disease_selector"
+                                    />
+                                <RadioButton
+                                    android:id="@+id/rb11"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:button="@color/transparent"
+                                    android:textSize="12sp"
+                                    android:gravity="center"
+                                    android:fontFamily="@font/mulish"
+                                    android:background="@drawable/disease_selector"
+                                    />
+                                <RadioButton
+                                    android:id="@+id/rb12"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:button="@color/transparent"
+                                    android:textSize="12sp"
+                                    android:gravity="center"
+                                    android:background="@drawable/disease_selector"
+                                    android:fontFamily="@font/mulish"
+                                    />
+
+                            </RadioGroup>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="189dp"
+                            android:background="@drawable/disease_card_shape_1"
+                            android:layout_marginTop="30dp"
+                            android:paddingVertical="22dp"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="16dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:gravity="top"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:id="@+id/txtd5"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:textSize="15sp"
+                                    android:includeFontPadding="false"
+                                    android:textColor="@color/black"/>
+                                <ImageButton
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:src="@drawable/info"
+                                    android:background="@color/transparent"/>
+                            </LinearLayout>
+
+                            <RadioGroup
+                                android:id="@+id/rg5"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginTop="27dp"
+                                android:orientation="horizontal"
+                                android:layout_weight="1">
+
+                                <RadioButton
+                                    android:id="@+id/rb13"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:button="@color/transparent"
+                                    android:textSize="12sp"
+                                    android:gravity="center"
+                                    android:fontFamily="@font/mulish"
+                                    android:background="@drawable/disease_selector"
+                                    />
+                                <RadioButton
+                                    android:id="@+id/rb14"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:button="@color/transparent"
+                                    android:textSize="12sp"
+                                    android:gravity="center"
+                                    android:fontFamily="@font/mulish"
+                                    android:background="@drawable/disease_selector"
+                                    />
+                                <RadioButton
+                                    android:id="@+id/rb15"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:button="@color/transparent"
+                                    android:textSize="12sp"
+                                    android:gravity="center"
+                                    android:background="@drawable/disease_selector"
+                                    android:fontFamily="@font/mulish"
+                                    />
+
+                            </RadioGroup>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="189dp"
+                            android:background="@drawable/disease_card_shape_1"
+                            android:layout_marginTop="30dp"
+                            android:paddingVertical="22dp"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="16dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:gravity="top"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:id="@+id/txtd6"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:textSize="15sp"
+                                    android:includeFontPadding="false"
+                                    android:textColor="@color/black"/>
+                                <ImageButton
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:src="@drawable/info"
+                                    android:background="@color/transparent"/>
+                            </LinearLayout>
+
+                            <RadioGroup
+                                android:id="@+id/rg6"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginTop="27dp"
+                                android:orientation="horizontal"
+                                android:layout_weight="1">
+
+                                <RadioButton
+                                    android:id="@+id/rb16"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:button="@color/transparent"
+                                    android:textSize="12sp"
+                                    android:gravity="center"
+                                    android:fontFamily="@font/mulish"
+                                    android:background="@drawable/disease_selector"
+                                    />
+                                <RadioButton
+                                    android:id="@+id/rb17"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:button="@color/transparent"
+                                    android:textSize="12sp"
+                                    android:gravity="center"
+                                    android:fontFamily="@font/mulish"
+                                    android:background="@drawable/disease_selector"
+                                    />
+                                <RadioButton
+                                    android:visibility="invisible"
+                                    android:id="@+id/rb18"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:button="@color/transparent"
+                                    android:textSize="12sp"
+                                    android:gravity="center"
+                                    android:background="@drawable/disease_selector"
+                                    android:fontFamily="@font/mulish"
+                                    />
+
+                            </RadioGroup>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="189dp"
+                            android:background="@drawable/disease_card_shape_1"
+                            android:layout_marginTop="30dp"
+                            android:paddingVertical="22dp"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="16dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:gravity="top"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:id="@+id/txtd7"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:textSize="15sp"
+                                    android:includeFontPadding="false"
+                                    android:textColor="@color/black"/>
+                                <ImageButton
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:src="@drawable/info"
+                                    android:background="@color/transparent"/>
+                            </LinearLayout>
+
+                            <RadioGroup
+                                android:id="@+id/rg7"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginTop="27dp"
+                                android:orientation="horizontal"
+                                android:layout_weight="1">
+
+                                <RadioButton
+                                    android:id="@+id/rb19"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:button="@color/transparent"
+                                    android:textSize="12sp"
+                                    android:gravity="center"
+                                    android:fontFamily="@font/mulish"
+                                    android:background="@drawable/disease_selector"
+                                    />
+                                <RadioButton
+                                    android:id="@+id/rb20"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:button="@color/transparent"
+                                    android:textSize="12sp"
+                                    android:gravity="center"
+                                    android:fontFamily="@font/mulish"
+                                    android:background="@drawable/disease_selector"
+                                    />
+                                <RadioButton
+                                    android:id="@+id/rb21"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:button="@color/transparent"
+                                    android:textSize="12sp"
+                                    android:gravity="center"
+                                    android:background="@drawable/disease_selector"
+                                    android:fontFamily="@font/mulish"
+                                    />
+
+                            </RadioGroup>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </ScrollView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardElevation="8sp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_height="91dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="start|center"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="13dp">
+            <Button
+                android:id="@+id/button_back"
+                android:layout_width="142dp"
+                android:layout_height="61dp"
+                android:includeFontPadding="false"
+                android:text="Back"
+                android:paddingHorizontal="22dp"
+                android:drawableStart="@drawable/ic_back"
+                android:drawableTint="@color/black"
+                android:elevation="0dp"
+                android:fontFamily="@font/mulish_semibold"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:background="@color/transparent"/>
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/button_next"
+                android:layout_width="142dp"
+                android:layout_height="61dp"
+                android:background="@drawable/button_small_1"
+                android:drawableRight="@drawable/ic_next"
+                android:drawableTint="@color/white"
+                android:elevation="0dp"
+                android:fontFamily="@font/mulish_semibold"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:includeFontPadding="false"
+                android:paddingHorizontal="22dp"
+
+                android:text="Next" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

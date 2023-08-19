@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#FF308BF9</color>
+    <color name="secondary">#FF0B4081</color>
+    <color name="select_primary">#FF2365B5</color>
+    <color name="light_primary">#FFF9FCFF</color>
+    <color name="light_secondary">#FFE4F0FF</color>
+    <color name="dark_primary">#FF053742</color>
+    <color name="black">#FF252525</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="result_primary">#927CFF</color>
+
+    <color name="dark1">#FF455A64</color>
+    <color name="color_success">#FF3FAF58</color>
+    <color name="transparent">#0000</color>
+
+    <color name="grey">#535359</color>
+    <color name="darK_grey">#535359</color>
+    <color name="disabled">#D9D9D9</color>
+    <color name="disabled_light">#D9D9D9</color>
+    <color name="danger">#EA5455</color>
+
+    <color name="green">#3FAF58</color>
+    <color name="yellow">#F8B10F</color>
+    <color name="red">#EA5455</color>
+    <color name="light">#F0F0F0</color>
+
+    // profile colors
+    <color name="profile1">#99E37F</color>
+    <color name="profile2">#FBB03B</color>
+    <color name="profile3">#EA5455</color>
+    <color name="profile4">#82BCF4</color>
+
+    // BMI colors
+    <color name="under_weight">#FCEE21</color>
+    <color name="normal">#3FAF58</color>
+    <color name="overweight">#FFC412</color>
+    <color name="obese">#ED4C64</color>
+    <color name="morbidly_obese">#B23473</color>
+
+    /// calories buttons
+    <color name="calories">#3FAF58</color>
+    <color name="carbohydrate">#535359</color>
+    <color name="protein">#F8B10F</color>
+    <color name="fats">#DE5753</color>
+    <color name="fiber">#662D91</color>
+
+    <color name="calories_inactive">#B2DFBC</color>
+    <color name="carbohydrate_inactive">#BABABD</color>
+    <color name="protein_inactive">#FCE09F</color>
+    <color name="fats_inactive">#F2BCBA</color>
+    <color name="fiber_inactive">#C2ABD3</color>
+
+    <color name="calories_progress_bg_active">#E0E0E0</color>
+    <color name="calories_progress_bg_in_active">#F3F3F3</color>
+
+</resources>

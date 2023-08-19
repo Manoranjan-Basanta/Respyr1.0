@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@color/white"
+    android:elevation="4dp"
+    android:layout_marginTop="27dp"
+    android:orientation="vertical"
+    android:background="@drawable/bottom_sheet_shape">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:gravity="center"
+        android:background="@drawable/card_shadow">
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="4dp"
+            android:backgroundTint="@color/black"
+            android:background="@drawable/eclips1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="15dp"
+        android:gravity="start|center"
+        android:paddingHorizontal="20dp">
+
+        <TextView
+            android:id="@+id/txt_profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shubham, \nYour Overall Health Score is"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:fontFamily="@font/mulish"
+            android:textColor="@color/black"
+            android:includeFontPadding="false"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_overall_health_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="59%"
+                android:textAllCaps="false"
+                android:textSize="45sp"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="#EA5455"
+                android:includeFontPadding="false"
+                />
+            <com.mackhartley.roundedprogressbar.RoundedProgressBar
+                android:id="@+id/progress_overall_health_score"
+                android:layout_width="180dp"
+                android:layout_height="18dp"
+                app:rpbBackgroundColor="#F0F0F0"
+                app:rpbBackgroundTextColor="#0000"
+                app:rpbCornerRadius="20dp"
+                app:rpbProgressColor="#EA5455"
+                app:rpbProgressTextColor="#0000"
+                app:rpbTextPadding="12dp"
+                android:layout_marginTop="10dp"
+                app:rpbProgress="50"
+                app:rpbTextSize="0dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start|center"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="30dp">
+        <RelativeLayout
+            android:layout_width="88dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:elevation="2dp"
+                android:src="@drawable/users1"/>
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:elevation="1dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/user2"/>
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_alignParentEnd="true"
+                android:elevation="0dp"
+                android:src="@drawable/user3"/>
+
+        </RelativeLayout>
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="0dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:text="Great! Your score is better than 59% of other users"
+                android:textSize="15sp"
+                android:fontFamily="@font/roboto"
+                android:includeFontPadding="false"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="14dp"
+        android:background="#E4F0FF"/>
+
+    <Button
+        android:id="@+id/button_view_analysis"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textAllCaps="false"
+        android:textAlignment="textStart"
+        android:drawableEnd="@drawable/arrow_right1"
+        android:background="@color/transparent"
+        android:paddingHorizontal="20dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/mulish"
+        android:textColor="@color/primary"
+        android:drawableTint="@color/primary"
+        android:text="View Full Analysis"/>
+
+</LinearLayout>

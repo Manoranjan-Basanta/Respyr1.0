@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".authentication.profile_creation.medical_data.Diabetic">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <include layout="@layout/user_profile_create_progress5"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="12dp"
+                        android:paddingHorizontal="26dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:gravity="center"
+                                android:includeFontPadding="false"
+                                android:text="MEDICAL HISTORY"
+                                android:textColor="@color/primary"
+                                android:textSize="15sp" />
+                            <include layout="@layout/user_profile_dots"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="start"
+                            android:includeFontPadding="false"
+                            android:text="What’s your fasting sugar level ?"
+                            android:layout_marginTop="37.5dp"
+                            android:textColor="@color/black"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:fontFamily="@font/mulish"
+                            android:gravity="start"
+                            android:includeFontPadding="false"
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:text="This is used to get accurate health status" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="25dp"
+                        android:layout_weight="1">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="42dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txt_card1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=" 100 mg dl"
+                                android:gravity="start|center"
+                                android:includeFontPadding="false"
+                                android:textSize="15sp"
+                                android:paddingVertical="20dp"
+                                android:drawableStart="@drawable/radio_active"
+                                android:drawablePadding="12dp"
+                                android:paddingHorizontal="12dp"
+                                android:background="@drawable/blood_test_card_active"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins_semibold"/>
+
+
+                            <TextView
+                                android:id="@+id/txt_card2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Between 100  126 mg dl"
+                                android:gravity="start|center"
+                                android:includeFontPadding="false"
+                                android:textSize="15sp"
+                                android:paddingVertical="20dp"
+                                android:drawableStart="@drawable/radio_inactive"
+                                android:drawablePadding="12dp"
+                                android:paddingHorizontal="12dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/blood_test_card_inactive"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins_semibold"/>
+
+
+                            <TextView
+                                android:id="@+id/txt_card3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Between 126  140 mg dl"
+                                android:gravity="start|center"
+                                android:includeFontPadding="false"
+                                android:textSize="15sp"
+                                android:paddingVertical="20dp"
+                                android:drawableStart="@drawable/radio_inactive"
+                                android:drawablePadding="12dp"
+                                android:paddingHorizontal="12dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/blood_test_card_inactive"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins_semibold"/>
+                            <TextView
+                                android:id="@+id/txt_card4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Between 140  200 mg dl"
+                                android:gravity="start|center"
+                                android:includeFontPadding="false"
+                                android:textSize="15sp"
+                                android:paddingVertical="20dp"
+                                android:drawableStart="@drawable/radio_inactive"
+                                android:drawablePadding="12dp"
+                                android:paddingHorizontal="12dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/blood_test_card_inactive"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins_semibold"/>
+                            <TextView
+                                android:id="@+id/txt_card5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="200 mg dl"
+                                android:gravity="start|center"
+                                android:includeFontPadding="false"
+                                android:textSize="15sp"
+                                android:paddingVertical="20dp"
+                                android:drawableStart="@drawable/radio_inactive"
+                                android:drawablePadding="12dp"
+                                android:paddingHorizontal="12dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/blood_test_card_inactive"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins_semibold"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#E4F0FF"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_height="91dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="start|center"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="13dp">
+            <Button
+                android:id="@+id/button_back"
+                android:layout_width="142dp"
+                android:layout_height="61dp"
+                android:includeFontPadding="false"
+                android:text="Back"
+                android:paddingHorizontal="22dp"
+                android:drawableStart="@drawable/ic_back"
+                android:drawableTint="@color/black"
+                android:elevation="0dp"
+                android:fontFamily="@font/mulish_semibold"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:background="@color/transparent"/>
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/button_next"
+                android:layout_width="142dp"
+                android:layout_height="61dp"
+                android:background="@drawable/button_small_1"
+                android:drawableRight="@drawable/ic_next"
+                android:drawableTint="@color/white"
+                android:elevation="0dp"
+                android:fontFamily="@font/mulish_semibold"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:includeFontPadding="false"
+                android:paddingHorizontal="22dp"
+                android:text="Next" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

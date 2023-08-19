@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E4F0FF"
+    android:paddingVertical="24dp"
+    android:paddingHorizontal="20dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="40dp">
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/aclohol"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_light"
+                    android:background="@drawable/eclips1"
+                    android:backgroundTint="@color/darK_grey"
+                    android:text="11 Days Streak"
+                    android:paddingHorizontal="16dp"
+                    android:gravity="center"
+                    android:drawablePadding="10dp"
+                    android:paddingVertical="5dp"
+                    android:drawableStart="@drawable/streak"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Did you consumed any alcohol ?"
+                android:layout_marginTop="30dp"
+                android:includeFontPadding="false"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mulish"
+                android:text="Track your daily routine to keep up with your lifestyle score including insights &amp; suggestions to improve"
+                android:layout_marginTop="10dp"
+                android:includeFontPadding="false"
+                android:textColor="@color/grey"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+
+            <RadioGroup
+                android:id="@+id/radio_group_alcohol_taken"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton
+                    android:id="@+id/radio_button_alcohol_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="76dp"
+                    android:buttonTint="@color/alcohol_button_tint1"
+                    android:background="@drawable/radio_alcohol"
+                    android:drawablePadding="8dp"
+                    android:text="Yes.."
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:paddingEnd="32dp"
+                    android:drawableEnd="@drawable/alcoho_yes"
+                    android:paddingHorizontal="10dp"/>
+                <RadioButton
+                    android:id="@+id/radio_button_alcohol_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="76dp"
+                    android:layout_marginTop="15dp"
+                    android:text="NO! Not for me.."
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:paddingEnd="32dp"
+                    android:drawableEnd="@drawable/alcohol_no"
+                    android:buttonTint="@color/alcohol_button_tint1"
+                    android:background="@drawable/radio_alcohol"
+                    android:drawablePadding="8dp"
+                    />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

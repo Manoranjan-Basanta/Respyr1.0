@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".results.DetailedLifeStyle">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="521dp"
+                android:background="#E4F0FF"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="27dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:maxWidth="250dp"
+                        android:text="DAILY ROUTINE"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textAllCaps="true"
+                        android:includeFontPadding="false"
+                        android:fontFamily="@font/poppins_semibold"/>
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/close"
+                        app:tint="@color/black" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="13dp"
+                android:layout_marginVertical="30dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="250dp"
+                    android:text="Water Intake"
+                    android:textColor="@color/primary"
+                    android:textSize="12sp"
+                    android:textAllCaps="true"
+                    android:includeFontPadding="false"
+                    android:fontFamily="@font/poppins_semibold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="See your weekly trend of your water intake here. For an accurate analysis, track everyday."
+                    android:textColor="@color/grey"
+                    android:textSize="12sp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/mulish"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/reactangel_rad20"
+                    android:backgroundTint="#F0F0F0"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="30dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:background="@drawable/reactangel_rad20"
+                        android:backgroundTint="@color/primary"
+                        android:layout_height="270dp"
+                        android:orientation="vertical"
+                        android:paddingVertical="14dp"
+                        android:paddingHorizontal="17dp">
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingVertical="14dp"
+                        android:gravity="center"
+                        android:paddingHorizontal="17dp">
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:maxWidth="250dp"
+                            android:text="+4"
+                            android:background="@drawable/eclips1"
+                            android:backgroundTint="@color/white"
+                            android:gravity="center"
+                            android:textColor="@color/primary"
+                            android:textSize="15sp"
+                            android:paddingHorizontal="4dp"
+                            android:drawableRight="@drawable/glass3"
+                            android:includeFontPadding="false"
+                            android:fontFamily="@font/roboto"/>
+                        <Space
+                            android:layout_width="28dp"
+                            android:layout_height="0dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="See your weekly trend of your water intake here. For an accurate analysis, track everyday."
+                            android:textColor="@color/darK_grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/mulish"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:paddingHorizontal="13dp"
+                android:background="#E4F0FF"
+                android:paddingVertical="50dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/smoke"
+                        app:tint="@color/black" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="250dp"
+                        android:text="Smoking"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:layout_marginTop="10dp"
+                        android:includeFontPadding="false"
+                        android:fontFamily="@font/poppins_semibold"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/reactangel_rad20"
+                    android:backgroundTint="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:background="@drawable/reactangel_rad20"
+                        android:backgroundTint="@color/white"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingVertical="14dp"
+                        android:paddingHorizontal="17dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="11"
+                            android:drawableStart="@drawable/streak"
+                            android:padding="10dp"
+                            android:gravity="center"
+                            android:drawablePadding="10dp"
+                            android:background="@drawable/eclips1"
+                            android:fontFamily="@font/roboto_medium"
+                            android:textSize="15sp"
+                            android:textColor="@color/darK_grey"
+                            android:backgroundTint="#FFF4D2"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="250dp"
+                            android:text="Keep it up, Shubham!"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:layout_marginTop="10dp"
+                            android:includeFontPadding="false"
+                            android:fontFamily="@font/poppins_semibold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="250dp"
+                            android:text="You’ve a streak of 11 days without smoking."
+                            android:textColor="@color/grey"
+                            android:textSize="12sp"
+                            android:layout_marginTop="5dp"
+                            android:includeFontPadding="false"
+                            android:fontFamily="@font/mulish"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_user1"
+                            app:tint="@color/primary" />
+                        <Space
+                            android:layout_width="15dp"
+                            android:layout_height="0dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="250dp"
+                            android:text="You’re in the top 3% of users in maintaining this streak"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/mulish"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="50dp">
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/aclohol"
+                        app:tint="@color/black" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="250dp"
+                        android:text="Alcohol"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:layout_marginTop="10dp"
+                        android:includeFontPadding="false"
+                        android:fontFamily="@font/poppins_semibold"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/reactangel_rad20"
+                    android:backgroundTint="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:background="@drawable/reactangel_rad20"
+                        android:backgroundTint="@color/white"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingVertical="14dp"
+                        android:gravity="start|center"
+                        android:paddingHorizontal="17dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="11"
+                            android:drawableStart="@drawable/streak"
+                            android:padding="10dp"
+                            android:gravity="center"
+                            android:drawablePadding="10dp"
+                            android:background="@drawable/eclips1"
+                            android:fontFamily="@font/roboto_medium"
+                            android:textSize="15sp"
+                            android:textColor="@color/darK_grey"
+                            android:backgroundTint="#FFF4D2"/>
+                        <Space
+                            android:layout_width="15dp"
+                            android:layout_height="0dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="250dp"
+                            android:text="You’ve a streak of 11 days without smoking."
+                            android:textColor="@color/grey"
+                            android:textSize="12sp"
+                            android:includeFontPadding="false"
+                            android:fontFamily="@font/mulish"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="13dp"
+                        android:paddingBottom="20dp"
+                        android:paddingHorizontal="20dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <include layout="@layout/habits_streak_item"/>
+                            <Space
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="0dp"/>
+                            <include layout="@layout/habits_streak_item"/>
+                            <Space
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="0dp"/>
+                            <include layout="@layout/habits_streak_item"/>
+                            <Space
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="0dp"/>
+                            <include layout="@layout/habits_streak_item"/>
+                            <Space
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="0dp"/>
+                            <include layout="@layout/habits_streak_item"/>
+                            <Space
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="0dp"/>
+                            <include layout="@layout/habits_streak_item"/>
+                            <Space
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="0dp"/>
+                            <include layout="@layout/habits_streak_item"/>
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="250dp"
+                            android:text="You’ve a streak of 11 days without smoking."
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:layout_marginTop="15dp"
+                            android:includeFontPadding="false"
+                            android:fontFamily="@font/mulish"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

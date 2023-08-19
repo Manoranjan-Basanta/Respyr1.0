@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:background="#927CFF">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingBottom="47dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today\nSuggestions"
+            android:includeFontPadding="false"
+            android:textColor="#3B258D"
+            android:gravity="start"
+            android:textSize="25sp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textAllCaps="false"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We have generated suggestions based on your overall result. Check it out!"
+            android:includeFontPadding="false"
+            android:textColor="#3B258D"
+            android:gravity="start"
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            android:fontFamily="@font/mulish"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="209dp"
+        android:src="@drawable/wheel"/>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Inactive state -->
+    <item android:state_selected="false">
+        <shape android:shape="oval">
+            <solid android:color="#CCCCCC" /> <!-- Color for inactive indicator -->
+        </shape>
+    </item>
+
+    <!-- Active state -->
+    <item android:state_selected="true">
+        <shape android:shape="oval">
+            <solid android:color="#FF0000" /> <!-- Color for active indicator -->
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/select_primary"
+    android:orientation="vertical"
+    tools:context=".reading.SelectUser">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="13dp"
+        android:gravity="start|center"
+        android:paddingTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Profile"
+            android:fontFamily="@font/poppins_semibold"
+            android:includeFontPadding="false"
+            android:textSize="25sp"
+            android:textColor="@color/white"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingVertical="20dp"
+            android:gravity="center">
+
+            <GridView
+                android:id="@+id/profileGridView"
+                android:layout_width="315dp"
+                android:layout_height="wrap_content"
+                android:numColumns="2"
+                android:gravity="center"
+                android:verticalSpacing="25dp"
+                android:horizontalSpacing="25dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="28dp"
+        android:layout_alignParentBottom="true"
+        android:paddingHorizontal="20dp"
+        android:background="@drawable/gradient1">
+        <Button
+            android:id="@+id/button_add_new_profile"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="70dp"
+            android:background="@drawable/rectange_rad15"
+            android:backgroundTint="@color/primary"
+            android:drawableEnd="@drawable/arrow_right1"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="20dp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/mulish"
+            android:drawableTint="@color/white"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:text="Add New Friend"/>
+    </LinearLayout>
+
+</RelativeLayout>

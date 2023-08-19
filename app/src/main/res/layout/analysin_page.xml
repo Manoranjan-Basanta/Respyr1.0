@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="30dp"
+                android:layout_height="30dp">
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:id="@+id/analyse_progress1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:indicatorSize="24dp"
+                    app:trackColor="#E0E0E0"
+                    android:visibility="gone"
+                    app:trackThickness="2dp"
+                    android:layout_centerInParent="true"
+                    app:indicatorColor="#535359"
+                    android:indeterminate="true" />
+
+                <ImageView
+                    android:id="@+id/analyse_image1"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/uncheck_progress" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="13dp"
+            android:layout_height="0dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_semibold"
+            android:includeFontPadding="false"
+            android:textSize="15sp"
+            android:text="Calculating your result"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="30dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <View
+            android:id="@+id/analyse_view1"
+            android:layout_width="3dp"
+            android:layout_height="50dp"
+            android:background="@drawable/eclips1"
+            android:backgroundTint="#E0E0E0"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="30dp"
+                android:layout_height="30dp">
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:id="@+id/analyse_progress2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:indicatorSize="24dp"
+                    app:trackColor="#E0E0E0"
+                    android:visibility="gone"
+                    app:trackThickness="2dp"
+                    android:layout_centerInParent="true"
+                    app:indicatorColor="#535359"
+                    android:indeterminate="true" />
+
+                <ImageView
+                    android:id="@+id/analyse_image2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/uncheck_progress" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="13dp"
+            android:layout_height="0dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_semibold"
+            android:includeFontPadding="false"
+            android:textSize="15sp"
+            android:text="Analyzing your result"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="30dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <View
+            android:id="@+id/analyse_view2"
+            android:layout_width="3dp"
+            android:layout_height="50dp"
+            android:background="@drawable/eclips1"
+            android:backgroundTint="#E0E0E0"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="30dp"
+                android:layout_height="30dp">
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:id="@+id/analyse_progress3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:indicatorSize="24dp"
+                    app:trackColor="#E0E0E0"
+                    android:visibility="gone"
+                    app:trackThickness="2dp"
+                    android:layout_centerInParent="true"
+                    app:indicatorColor="#535359"
+                    android:indeterminate="true" />
+
+                <ImageView
+                    android:id="@+id/analyse_image3"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/uncheck_progress" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="13dp"
+            android:layout_height="0dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_semibold"
+            android:includeFontPadding="false"
+            android:textSize="15sp"
+            android:text="Generating your report"/>
+
+    </LinearLayout>
+</LinearLayout>

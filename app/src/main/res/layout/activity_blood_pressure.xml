@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".reading.BloodPressure">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:elevation="2dp"
+            android:layout_height="wrap_content">
+            <include layout="@layout/reading_appbar"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_keep_finger"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="44dp"
+            android:paddingBottom="72dp"
+            android:visibility="gone">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Vital Test"
+                    android:textColor="@color/black"
+                    android:includeFontPadding="false"
+                    android:layout_gravity="center"
+                    android:textSize="25sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mulish"
+                    android:text="Turn the device. Place the thumb on \nthe RED sensor and press gently."
+                    android:textColor="@color/darK_grey"
+                    android:includeFontPadding="false"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_marginTop="22dp"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/image_swipe_up"
+                    android:layout_width="260dp"
+                    android:layout_height="260dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/finger" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_waiting_for_your_finger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Waiting for your finger..."
+                android:textColor="@color/primary"
+                android:includeFontPadding="false"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:textAlignment="center"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/layout_start_test"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            android:background="#2365B5"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/start_test_bg"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/button_start_test"
+                    android:layout_width="290dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:minWidth="290dp"
+                    android:background="@drawable/button_start_test"
+                    android:minHeight="290dp"
+                    android:layout_marginBottom="70dp"
+                    android:layout_height="290dp"/>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:gravity="bottom">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:paddingVertical="25dp"
+                        android:gravity="center|bottom"
+                        android:orientation="vertical"
+                        android:background="@drawable/device_ready">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="17dp"
+                            android:text="Device is ready!"
+                            android:lineSpacingExtra="-6sp"
+                            android:textSize="15sp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/poppins_semibold"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_blood_pressure"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone">
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="300dp">
+                <antonkozyriatskyi.circularprogressindicator.CircularProgressIndicator
+                    android:id="@+id/circular_progress1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    app:direction="clockwise"
+                    app:dotColor="?colorPrimary"
+                    app:dotWidth="16dp"
+                    app:drawDot="false"
+                    app:enableProgressAnimation="true"
+                    app:fillBackground="false"
+                    app:gradientEndColor="@color/primary"
+                    app:gradientType="linear"
+                    app:progressBackgroundColor="#E4F0FF"
+                    app:progressBackgroundStrokeWidth="10dp"
+                    app:progressCap="round"
+                    app:progressColor="@color/primary"
+                    app:progressStrokeWidth="10dp"
+                    app:textColor="@color/transparent"
+                    app:textSize="20dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="118dp"
+                        android:layout_height="118dp"
+                        android:src="@drawable/gifanim"/>
+
+                    <TextView
+                        android:id="@+id/txt_vital_percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="bottom"
+                        android:text="12%"
+                        android:lineSpacingExtra="-3sp"
+                        android:textColor="@color/black"
+                        android:textSize="45sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="bottom"
+                        android:includeFontPadding="false"
+                        android:text="Reading your vitals"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone"
+            android:id="@+id/layout_remove_finger"
+            android:background="@color/white"
+            android:paddingVertical="45dp"
+            android:orientation="vertical">
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="260dp"
+                android:layout_height="260dp"
+                android:src="@drawable/remove_finger1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textAllCaps="true"
+                android:layout_marginTop="33dp"
+                android:includeFontPadding="false"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/black"
+                android:text="REMOVE FINGER"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                android:layout_marginTop="15dp"
+                android:includeFontPadding="false"
+                android:textAlignment="center"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/black"
+                android:text="Away From The Sensor"/>
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/layout_do_not_remove_finger"
+        android:background="#D9000000"
+        android:paddingVertical="45dp"
+        android:orientation="vertical">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        
+        <ImageView
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:src="@drawable/remove_finger"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textAllCaps="true"
+            android:layout_marginTop="33dp"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/white"
+            android:text="DON’T REMOVE FINGER"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:layout_marginTop="15dp"
+            android:includeFontPadding="false"
+            android:textAlignment="center"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/white"
+            android:text="Place your finger back \n&amp; keep it steady"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:layout_marginTop="15dp"
+            android:includeFontPadding="false"
+            android:textAlignment="center"
+            android:fontFamily="@font/mulish"
+            android:textColor="@color/white"
+            android:text="Removing finger might lead\nto inaccurate results"/>
+        <TextView
+            android:id="@+id/txt_waiting_for_your_finger2"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:text="Waiting for your finger...."
+            android:textSize="15sp"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/primary"
+            android:fontFamily="@font/mulish"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txtLog"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:visibility="gone"
+        android:gravity="bottom"
+        android:background="@color/light_primary"
+        android:elevation="1dp"
+        android:text="Log"/>
+</RelativeLayout>

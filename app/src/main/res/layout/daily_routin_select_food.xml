@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:backgroundTint="@color/white"
+    android:background="@drawable/bottom_sheet_shape"
+    android:padding="0dp">
+    <LinearLayout
+        android:id="@+id/selected_food_bg"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="20dp"
+        android:background="@drawable/food_bg_not_found"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/button_back"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/back"
+                android:background="@color/transparent"
+                app:tint="@color/white" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="QUANTITY"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_semibold"
+                android:includeFontPadding="false"
+                android:textSize="12sp"
+                android:textColor="@color/white"/>
+            <ImageButton
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:src="@drawable/info"
+                android:background="@color/transparent"
+                app:tint="@color/white" />
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/txt_selected_food_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_semibold"
+            android:includeFontPadding="false"
+            android:textSize="25sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingVertical="30dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="AMOUNT IN GRAMS"
+            android:gravity="center"
+            android:visibility="gone"
+            android:fontFamily="@font/poppins_semibold"
+            android:includeFontPadding="false"
+            android:textSize="12sp"
+            android:textColor="@color/primary"/>
+
+
+        <EditText
+            android:id="@+id/et_food_quantity"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/height_edit"
+            android:hint="Enter grams"
+            android:inputType="numberDecimal"
+            android:paddingHorizontal="8dp"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            android:fontFamily="@font/roboto"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="40dp"
+        android:gravity="center">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="AMOUNT"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_semibold"
+                android:includeFontPadding="false"
+                android:textSize="12sp"
+                android:textColor="@color/primary"/>
+
+            <com.shawnlin.numberpicker.NumberPicker
+                android:id="@+id/food_amount_picker"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:np_divider="@color/primary"
+                app:np_dividerColor="@color/primary"
+                app:np_dividerDistance="54dp"
+                app:np_dividerThickness="1dp"
+                app:np_wrapSelectorWheel="false"
+                app:np_max="10000"
+                app:np_min="100"
+                app:np_selectedTextColor="@color/black"
+                app:np_selectedTextSize="25sp"
+                app:np_textColor="@color/grey"
+                app:np_textSize="12sp"
+                app:np_value="50"
+                app:np_wheelItemCount="5" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SCALE"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_semibold"
+                android:includeFontPadding="false"
+                android:textSize="12sp"
+                android:textColor="@color/primary"/>
+            <com.shawnlin.numberpicker.NumberPicker
+                android:id="@+id/food_scale_picker"
+                android:layout_width="178dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:np_divider="@color/primary"
+                app:np_dividerColor="@color/primary"
+                app:np_dividerDistance="54dp"
+                app:np_wrapSelectorWheel="false"
+                app:np_dividerThickness="1dp"
+                app:np_max="10000"
+                app:np_min="100"
+                app:np_selectedTextColor="@color/black"
+                app:np_selectedTextSize="25sp"
+                app:np_textColor="@color/grey"
+                app:np_textSize="12sp"
+                app:np_value="50"
+                app:np_wheelItemCount="5" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txt_grams_contains"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Grams contains : "
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:fontFamily="@font/mulish"
+        android:includeFontPadding="false"
+        android:textSize="15sp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"/>
+    <LinearLayout
+        android:id="@+id/button_add_food_to_db"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@color/primary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            android:gravity="center"
+            android:fontFamily="@font/mulish"
+            android:includeFontPadding="false"
+            android:textSize="15sp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+</LinearLayout>

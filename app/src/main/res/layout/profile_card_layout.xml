@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="179dp">
+
+
+    <LinearLayout
+        android:id="@+id/profileExistsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="179dp"
+        android:visibility="visible"
+        android:orientation="vertical"
+        android:background="@drawable/select_profile2"
+        android:backgroundTint="@color/white">
+
+        <LinearLayout
+            android:id="@+id/profile_bg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:backgroundTint="#99E37F"
+            android:background="@drawable/select_profile1">
+
+
+            <ImageView
+                android:id="@+id/img_gender"
+                android:layout_width="103dp"
+                android:layout_height="103dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="11dp"
+            android:paddingVertical="14dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_profile_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shubham"
+                android:fontFamily="@font/mulish_semibold"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/txt_age_and_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="18 years"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/black"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/profileNotExistsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="179dp"
+        android:gravity="center"
+        android:background="@drawable/add_profile"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/createProfileButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/add1"
+            android:background="@color/transparent"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:fontFamily="@font/mulish"
+            android:textColor="@color/white"
+            android:drawablePadding="10dp"
+            android:text="ADD PROFILE" />
+    </LinearLayout>
+</LinearLayout>

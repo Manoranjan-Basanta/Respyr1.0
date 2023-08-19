@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="37dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Water Intake"
+            android:layout_marginStart="20dp"
+            android:textAllCaps="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:includeFontPadding="false"
+            android:textColor="@color/primary"
+            android:textSize="12sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="1 glass = 250 mL"
+            android:layout_marginStart="20dp"
+            android:layout_alignParentEnd="true"
+            android:drawableStart="@drawable/glass1"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            android:background="@drawable/glass_bg"
+            android:backgroundTint="#F0F0F0"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="10dp"
+            android:textColor="@color/grey"
+            android:textSize="12sp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="How much water did you consume ?"
+            android:layout_marginTop="30dp"
+            android:includeFontPadding="false"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mulish"
+            android:text="Track your daily routine to keep up with your lifestyle score including insights &amp; suggestions to improve"
+            android:layout_marginTop="10dp"
+            android:includeFontPadding="false"
+            android:textColor="@color/grey"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+
+    
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="52dp"
+      android:paddingHorizontal="20dp">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:gravity="center"
+          android:background="@drawable/glass_button_bg">
+
+          <ImageButton
+              android:id="@+id/button_water_minus"
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:background="@color/transparent"
+              android:src="@drawable/minus"
+              android:layout_height="match_parent"/>
+
+          <TextView
+              android:id="@+id/txt_water_glasses"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:fontFamily="@font/roboto"
+              android:text="0 glass"
+              android:gravity="center"
+              android:drawableStart="@drawable/glass3"
+              android:includeFontPadding="false"
+              android:textColor="@color/black"
+              android:textSize="12sp" />
+          <ImageButton
+              android:id="@+id/button_water_plus"
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:background="@color/transparent"
+              android:src="@drawable/add2"
+              android:layout_height="match_parent"/>
+      </LinearLayout>
+  </LinearLayout>
+
+
+</LinearLayout>

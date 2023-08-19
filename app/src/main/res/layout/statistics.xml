@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="50dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingHorizontal="14dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Statistics"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:includeFontPadding="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:paddingBottom="38dp"
+        android:paddingTop="18dp"
+        android:paddingHorizontal="13dp"
+        android:backgroundTint="#E4F0FF"
+        android:background="@drawable/ractangel_rad25">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Your Vital\nParameters"
+                android:gravity="start|center"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:includeFontPadding="false"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mon, 2 Aug"
+                android:gravity="start|center"
+                android:fontFamily="@font/roboto"
+                android:textSize="12sp"
+                android:textColor="@color/grey"
+                android:includeFontPadding="false"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/reactangel_rad20"
+            android:backgroundTint="#F9FCFF"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:paddingHorizontal="18dp"
+            android:paddingVertical="12dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/diabetic"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Diabetes"
+                    android:gravity="start|center"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="12sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/grey"
+                    android:includeFontPadding="false"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="71dp"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_rad10"
+                android:backgroundTint="#E4F0FF">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RISK LEVEL"
+                        android:gravity="start|center"
+                        android:fontFamily="@font/mulish"
+                        android:textSize="10sp"
+                        android:textColor="@color/grey"
+                        android:includeFontPadding="false"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Low"
+                        android:gravity="start|center"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="10sp"
+                        android:background="@drawable/eclips1"
+                        android:backgroundTint="#3FAF58"
+                        android:layout_marginTop="15dp"
+                        android:paddingHorizontal="24dp"
+                        android:paddingVertical="4dp"
+                        android:textColor="@color/white"
+                        android:includeFontPadding="false"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:background="@drawable/reactangel_rad20"
+            android:backgroundTint="#F9FCFF"
+            android:layout_marginTop="20dp">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:background="@drawable/reactangel_rad20"
+            android:backgroundTint="#F9FCFF"
+            android:layout_marginTop="20dp">
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

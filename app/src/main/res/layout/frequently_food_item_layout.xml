@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/food_image_view1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/food1"/>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="start|center"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/food_name_text_view1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Idli"
+                android:paddingHorizontal="12sp"
+                android:gravity="center|start"
+                android:textSize="12sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:includeFontPadding="false"
+                android:textColor="@color/grey"/>
+            <TextView
+                android:id="@+id/food_quantity_text_view1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4 Idli"
+                android:visibility="gone"
+                android:paddingHorizontal="12sp"
+                android:gravity="center|start"
+                android:textSize="10sp"
+                android:fontFamily="@font/mulish"
+                android:includeFontPadding="false"
+                android:textColor="@color/grey"/>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/button_add_food1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:visibility="visible"
+            android:background="@color/transparent"
+            android:src="@drawable/add"
+            app:tint="@color/primary" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="12sp"
+        android:background="#E4F0FF"
+        android:layout_marginBottom="25dp"/>
+</LinearLayout>

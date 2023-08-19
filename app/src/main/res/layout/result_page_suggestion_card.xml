@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#927CFF"
+        >
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="209dp"
+            android:src="@drawable/wheel"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="28dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SUGGESTIONS"
+                android:textSize="12sp"
+                android:textAllCaps="true"
+                android:fontFamily="@font/poppins_semibold"
+                android:includeFontPadding="false"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Here To Help!"
+                android:textSize="15sp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:includeFontPadding="false"
+                android:textColor="#3B258D"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We have generated suggestions based on your overall result. Check it out!"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/mulish"
+                android:includeFontPadding="false"
+                android:textColor="#3B258D"/>
+            <Button
+                android:id="@+id/button_suggestion_1"
+                android:layout_width="138dp"
+                android:layout_height="38dp"
+                android:background="@drawable/eclips1"
+                android:backgroundTint="@color/black"
+                android:text="View Suggestions"
+                android:textAllCaps="false"
+                android:textSize="10sp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/mulish"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

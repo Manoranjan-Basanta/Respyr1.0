@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/routin_header_bg"
+    android:layout_height="wrap_content"
+    android:paddingBottom="30dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingHorizontal="13dp"
+        android:gravity="center">
+        
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:backgroundTint="#99E37F"
+            android:background="@drawable/eclips1"
+            android:padding="1dp"
+            android:src="@drawable/profile_av1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_semibold"
+            android:includeFontPadding="false"
+            android:text="DAILY ROUTINE"/>
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@color/transparent"
+            android:src="@drawable/close"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rectange_35"
+        android:paddingHorizontal="18dp"
+        android:gravity="center"
+        android:layout_marginHorizontal="13dp"
+        android:backgroundTint="#000000">
+
+        <TextView
+            android:id="@+id/txt_routine_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_light"
+            android:text="-"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+        
+        <ImageButton
+            android:id="@+id/button_open_calender"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:background="@drawable/eclips1"
+            android:src="@drawable/ic_calender"
+            android:backgroundTint="@color/primary"
+            app:tint="@color/white" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mulish"
+        android:text="Track your daily routine to keep up with your lifestyle score including insights &amp; suggestions to improve"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="36dp">
+        <RelativeLayout
+            android:layout_width="68dp"
+            android:layout_height="36dp"
+            >
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentStart="true"
+                android:elevation="8dp"
+                android:src="@drawable/user1"/>
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerHorizontal="true"
+                android:elevation="6dp"
+                android:src="@drawable/user1"/>
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentEnd="true"
+                android:elevation="4dp"
+                android:src="@drawable/user1"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="19dp"
+            android:layout_height="0dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="12,000 users have already tracked their daily routine"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

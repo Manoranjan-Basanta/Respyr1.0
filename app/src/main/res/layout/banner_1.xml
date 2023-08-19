@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingVertical="23dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pages_banners"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <com.afollestad.viewpagerdots.DotsIndicator
+            android:id="@+id/dots"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            app:dot_drawable="@drawable/indicator_active"
+            app:dot_drawable_unselected ="@drawable/indicator_inactive"
+            app:dot_width="5dp"
+            app:dot_height="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

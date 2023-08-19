@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingHorizontal="14dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Trends"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:includeFontPadding="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="279dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:padding="18dp"
+        android:background="@drawable/graph_bg_1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Health Score"
+                android:gravity="start|center"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:includeFontPadding="false"/>
+            <ImageButton
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/arrow_right1"
+                android:background="@color/transparent"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:gravity="start|center">
+            <RelativeLayout
+                android:layout_width="48dp"
+                android:layout_height="48dp">
+                <antonkozyriatskyi.circularprogressindicator.CircularProgressIndicator
+                    android:id="@+id/health_score"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    app:progressBackgroundStrokeWidth="2dp"
+                    app:progressBackgroundColor="#E0E0E0"
+                    app:progressStrokeWidth="2dp"
+                    app:textColor="@color/transparent"
+                    />
+            </RelativeLayout>
+            <Space
+                android:layout_width="25dp"
+                android:layout_height="0dp"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your score is in healthy range"
+                    android:gravity="start|center"
+                    android:fontFamily="@font/mulish"
+                    android:textSize="12sp"
+                    android:textColor="@color/grey"
+                    android:includeFontPadding="false"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="start|center"
+                    android:layout_marginTop="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5%"
+                        android:gravity="start|center"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:includeFontPadding="false"/>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginHorizontal="5dp"
+                        android:src="@drawable/increasing_icon"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="better than yesterday"
+                        android:gravity="start|center"
+                        android:fontFamily="@font/mulish_semibold"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:includeFontPadding="false"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

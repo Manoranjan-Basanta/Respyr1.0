@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".reading.DeviceReady">
+
+    <LinearLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/reading_appbar"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_below="@id/appbar"
+        android:paddingHorizontal="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calibrating Device..."
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:includeFontPadding="false"
+            android:textColor="#053742"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Relax &amp; wait while we calibrate your device"
+            android:fontFamily="@font/mulish"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_marginTop="22dp"
+            android:includeFontPadding="false"
+            android:textColor="@color/darK_grey"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_weight="1">
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="450dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/device_ready1"/>
+        <ImageView
+            android:id="@+id/group_697"
+            android:layout_width="89.96dp"
+            android:layout_height="201dp"
+            android:src="@drawable/device"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+</RelativeLayout>

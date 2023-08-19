@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginTop="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/reactangel_rad20"
+        android:backgroundTint="#E6E6E6"
+        android:paddingVertical="9dp"
+        android:paddingHorizontal="20dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="NORMAL TASK"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="12sp"
+            android:textColor="#535359"
+            android:includeFontPadding="false"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/reactangel_rad20"
+        android:backgroundTint="#252525"
+        android:padding="20dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7 times. 7 days."
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:includeFontPadding="false"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Take atleast one test\nfor 7 days"
+                    android:fontFamily="@font/mulish_light"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:includeFontPadding="false"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3/7"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="25sp"
+                    android:textColor="@color/white"
+                    android:includeFontPadding="false"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mulish_light"
+                    android:includeFontPadding="false"
+                    android:text="Tests Completed"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="7dp"
+                        android:layout_height="7dp"
+                        android:background="@drawable/eclips1"
+                        android:backgroundTint="#3FAF58"/>
+                    <Space
+                        android:layout_width="2dp"
+                        android:layout_height="0dp"/>
+                    <View
+                        android:layout_width="7dp"
+                        android:layout_height="7dp"
+                        android:background="@drawable/eclips1"
+                        android:backgroundTint="#3FAF58"/>
+                    <Space
+                        android:layout_width="2dp"
+                        android:layout_height="0dp"/>
+                    <View
+                        android:layout_width="7dp"
+                        android:layout_height="7dp"
+                        android:background="@drawable/eclips1"
+                        android:backgroundTint="#3FAF58"/>
+                    <Space
+                        android:layout_width="2dp"
+                        android:layout_height="0dp"/>
+                    <View
+                        android:layout_width="7dp"
+                        android:layout_height="7dp"
+                        android:background="@drawable/eclips1"
+                        android:backgroundTint="#E6E6E6"/>
+                    <Space
+                        android:layout_width="2dp"
+                        android:layout_height="0dp"/>
+                    <View
+                        android:layout_width="7dp"
+                        android:layout_height="7dp"
+                        android:background="@drawable/eclips1"
+                        android:backgroundTint="#E6E6E6"/>
+                    <Space
+                        android:layout_width="2dp"
+                        android:layout_height="0dp"/>
+                    <View
+                        android:layout_width="7dp"
+                        android:layout_height="7dp"
+                        android:background="@drawable/eclips1"
+                        android:backgroundTint="#E6E6E6"/>
+                    <Space
+                        android:layout_width="2dp"
+                        android:layout_height="0dp"/>
+                    <View
+                        android:layout_width="7dp"
+                        android:layout_height="7dp"
+                        android:background="@drawable/eclips1"
+                        android:backgroundTint="#E6E6E6"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="33dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_outline_white"
+                android:text="Know More"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/mulish"
+                android:textAllCaps="false"/>
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="0dp"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="33dp"
+                android:layout_weight="1"
+                android:background="@drawable/eclips1"
+                android:backgroundTint="#308BF9"
+                android:text="Claim Reward"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/mulish"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

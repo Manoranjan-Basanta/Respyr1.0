@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:elevation="5dp"
+        android:layout_marginVertical="15dp"
+        android:background="@drawable/result_card"
+        android:layout_marginHorizontal="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/result_card_header"
+            android:backgroundTint="@color/primary"
+            android:paddingHorizontal="18dp"
+            android:paddingTop="30dp"
+            android:paddingBottom="20dp"
+            android:gravity="start|center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CLINICAL"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                android:background="@drawable/eclips1"
+                android:backgroundTint="@color/primary"
+                android:fontFamily="@font/poppins_semibold"
+                android:includeFontPadding="false"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Respiratory  Score"
+                android:textSize="25sp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:includeFontPadding="false"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="20dp"
+            android:paddingHorizontal="17dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Respiratory score is function of breath markers developed in comparison with gold standard clinical markers. For an accurate analysis, track regularly."
+                android:textSize="12sp"
+                android:fontFamily="@font/mulish"
+                android:includeFontPadding="false"
+                android:textColor="@color/grey"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="33dp"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="90dp"
+                        android:layout_height="90dp">
+                        <antonkozyriatskyi.circularprogressindicator.CircularProgressIndicator
+                            android:id="@+id/progress_blow_score"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            app:progressCap="butt"
+                            app:progressBackgroundStrokeWidth="5dp"
+                            app:progressBackgroundColor="@color/light"
+                            app:progressStrokeWidth="3dp"
+                            app:drawDot="false"
+                            app:textColor="@color/transparent"
+                            />
+
+                        <ImageView
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/blow" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <Space
+                    android:layout_width="25dp"
+                    android:layout_height="0dp"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+                        <TextView
+                            android:id="@+id/txt_blow_score_profile_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:includeFontPadding="false"
+                            android:text="Shubham,\nYou're Vital Score is"
+                            android:fontFamily="@font/mulish"/>
+                        <ImageButton
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/share"
+                            android:background="@color/transparent"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start">
+
+                        <TextView
+                            android:id="@+id/txt_blow_score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_bold"
+                            android:includeFontPadding="false"
+                            android:text="85"
+                            android:textColor="@color/black"
+                            android:textSize="45sp" />
+
+                        <Space
+                            android:layout_width="11dp"
+                            android:layout_height="0dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="/ 100"
+                            android:textColor="@color/black"
+                            android:includeFontPadding="false"
+                            android:fontFamily="@font/roboto"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt_blow_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/info"
+                        android:fontFamily="@font/mulish"
+                        android:textColor="@color/black"
+                        android:gravity="start|center"
+                        android:includeFontPadding="false"
+                        android:text="which is good!"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:background="@color/transparent"
+                android:drawableStart="@drawable/arrow_down"
+                android:fontFamily="@font/mulish"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:drawablePadding="15dp"
+                android:layout_marginTop="33dp"
+                android:textColor="@color/primary"
+                android:textAllCaps="false"
+                android:text="View Trend"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="33dp"
+                android:background="#E4F0FF"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="25dp"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:id="@+id/img_blow_warning"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/diabetic_badge"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="2">
+                    <TextView
+                        android:id="@+id/txt_blow_profile_name_footer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:id="@+id/txt_blow_suggestion_footer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/mulish"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/grey"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="40dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vital Analysis"
+                        android:textSize="25sp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="See your nutrition analysis based on your calories, carbs, proteins, fat &amp; fibre intake from food. For an accurate analysis, track everyday."
+                        android:fontFamily="@font/mulish"
+                        android:textColor="@color/grey"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="27dp"
+                    android:background="@drawable/rectange_rad15"
+                    android:backgroundTint="#F0F0F0"
+                    android:paddingVertical="15dp"
+                    android:paddingHorizontal="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last 7 readings"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="9dp">
+                        <TextView
+                            android:id="@+id/txt_vital_score_in_percentage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5%"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/mulish"
+                            android:includeFontPadding="false"
+                            android:textColor="@color/grey"/>
+                        <ImageView
+                            android:id="@+id/image_vital_updown"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:src="@drawable/data_up"/>
+                        <TextView
+                            android:id="@+id/txt_vital_score_percentage_in_message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="better than yesterday"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/mulish"
+                            android:includeFontPadding="false"
+                            android:textColor="@color/grey"/>
+                    </LinearLayout>
+
+
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="22dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/button_blow_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/black"
+            android:text="Manage Your Lifestyle"
+            android:textAllCaps="true"
+            android:fontFamily="@font/mulish"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:drawableRight="@drawable/arrow_right1"
+            android:drawableTint="@color/white"
+            android:paddingHorizontal="45dp"
+            android:background="@drawable/button_resulr_card"/>
+
+    </LinearLayout>
+
+</LinearLayout>

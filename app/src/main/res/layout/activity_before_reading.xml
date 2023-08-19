@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".reading.BeforeReading">
+
+    <include layout="@layout/reading_appbar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/txt_log"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:visibility="visible"
+       android:layout_marginTop="50dp"
+       android:id="@+id/device_connected_layout"
+       android:orientation="vertical">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1"
+           android:orientation="vertical"
+           android:paddingHorizontal="20dp"
+           android:gravity="center">
+
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="300dp"
+               android:src="@drawable/device_connected_"/>
+
+           <ImageView
+               android:id="@+id/img_connection_status"
+               android:layout_width="40dp"
+               android:layout_marginTop="20dp"
+               android:layout_height="40dp"/>
+
+           <TextView
+               android:id="@+id/txt_connection_status"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="25sp"
+               android:textAllCaps="false"
+               android:layout_marginTop="13dp"
+               android:includeFontPadding="false"
+               android:fontFamily="@font/poppins_semibold"
+               android:textColor="@color/black"
+               android:text="Device Connected"/>
+
+           <TextView
+               android:id="@+id/txt_connection_sub_status"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="15sp"
+               android:textAllCaps="false"
+               android:layout_marginTop="5sp"
+               android:gravity="center"
+               android:includeFontPadding="false"
+               android:fontFamily="@font/mulish"
+               android:textColor="@color/grey"
+               android:text="All set... Let’s go!"/>
+           <Space
+               android:layout_width="0dp"
+               android:layout_height="0dp"
+               android:layout_weight="1"/>
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="40dp"
+               android:maxHeight="40dp"
+               android:text="issue with connection?"
+               android:background="@drawable/button_outline_1"
+               android:layout_marginBottom="10dp"
+               android:paddingHorizontal="15dp"
+               android:textAllCaps="false"
+               android:fontFamily="@font/mulish"
+               android:textColor="@color/primary"
+               android:drawableEnd="@drawable/arrow_right1"
+               android:drawableTint="@color/grey"
+               android:drawablePadding="20dp"
+               android:textSize="12sp"/>
+       </LinearLayout>
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="2dp"
+           android:background="#E4F0FF"/>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:paddingHorizontal="20dp"
+           android:paddingVertical="20dp">
+           <Button
+               android:id="@+id/button_next"
+               android:layout_width="match_parent"
+               android:layout_height="61dp"
+               android:background="@drawable/eclips1"
+               android:drawableTint="@color/white"
+               android:fontFamily="@font/mulish"
+               android:paddingHorizontal="18sp"
+               android:text="@string/next"
+               android:backgroundTint="@color/primary"
+               android:drawableRight="@drawable/arrow_right1"
+               android:textAllCaps="false"
+               android:textColor="@color/white"
+               android:textSize="15sp" />
+       </LinearLayout>
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:gravity="center"
+        android:id="@+id/insert_cap_layout"
+        android:paddingVertical="67dp"
+        android:paddingHorizontal="30dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:layout_marginTop="33dp"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/mulish"
+            android:textColor="@color/grey"
+            android:gravity="center"
+            android:text="Place the mouth tube in\nthe slot"/>
+
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="219dp"
+            android:layout_height="291dp" />
+
+        <com.daimajia.numberprogressbar.NumberProgressBar
+            android:id="@+id/number_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            custom:progress_current="80"
+            custom:progress_max="100"
+            custom:progress_reached_bar_height="5dp"
+            custom:progress_reached_color="@color/primary"
+            custom:progress_text_color="@color/primary"
+            custom:progress_text_offset="1dp"
+            custom:progress_text_size="20sp"
+            android:layout_marginTop="149dp"
+            custom:progress_text_visibility="visible"
+            custom:progress_unreached_bar_height="5dp"
+            custom:progress_unreached_color="#E0E0E0" />
+
+        <TextView
+            android:id="@+id/txt_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:textAllCaps="false"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/mulish_semibold"
+            android:textColor="@color/primary"
+            android:gravity="center"
+            android:text="Loading.........8%"/>
+    </LinearLayout>
+</LinearLayout>

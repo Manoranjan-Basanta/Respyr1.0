@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".reading.Result">
+    <TextView
+        android:id="@+id/txt_log"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+   <ScrollView
+       android:id="@+id/result_scroll"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:fillViewport="true">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+           <include layout="@layout/result_page_health_score"/>
+           <include layout="@layout/result_page_diabetes"/>
+           <include layout="@layout/result_page_vital"/>
+           <include layout="@layout/result_page_blow"/>
+           <include layout="@layout/result_page_suggestion_card"/>
+           <include layout="@layout/result_page_lifestyle_score"/>
+           <include layout="@layout/result_page_bmi"/>
+           <include layout="@layout/suggestions_mini"/>
+       </LinearLayout>
+   </ScrollView>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="250dp"
+        android:text="Mon"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:includeFontPadding="false"
+        android:fontFamily="@font/mulish"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="250dp"
+        android:text="16 May"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:includeFontPadding="false"
+        android:fontFamily="@font/mulish"/>
+
+    <View
+        android:layout_width="24dp"
+        android:layout_height="7dp"
+        android:background="@drawable/eclips1"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/red"/>
+</LinearLayout>

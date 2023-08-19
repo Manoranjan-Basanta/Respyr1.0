@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingVertical="20dp"
+    android:background="@drawable/delete_report_bg"
+    android:paddingHorizontal="20dp"
+    android:gravity="top|center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="80dp"
+        android:layout_height="5dp"
+        app:cardBackgroundColor="@color/grey"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:gravity="start|center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:src="@drawable/delete_lg"/>
+        </LinearLayout>
+        <View
+            android:layout_width="20dp"
+            android:layout_height="0dp"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Are You Sure?"
+                android:fontFamily="@font/poppins_semibold"
+                android:includeFontPadding="false"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This will delete the blood report\npermanently."
+                android:fontFamily="@font/mulish"
+                android:includeFontPadding="false"
+                android:textSize="15dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:gravity="center"
+        android:layout_marginBottom="29dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:text="CANCEL"
+            android:background="@drawable/button_cancel"
+            android:textSize="10sp"
+            android:paddingHorizontal="45dp"
+            android:textColor="@color/grey"
+            android:fontFamily="@font/mulish"/>
+        <View
+            android:layout_width="17dp"
+            android:layout_height="0dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:text="Delete"
+            android:background="@drawable/button_delete"
+            android:textSize="10sp"
+            android:paddingHorizontal="45dp"
+            android:elevation="0dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/mulish"/>
+    </LinearLayout>
+
+
+</LinearLayout>

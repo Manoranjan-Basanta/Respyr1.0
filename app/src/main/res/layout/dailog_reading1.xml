@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F9FCFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="start|center"
+        android:paddingHorizontal="21dp">
+        <ImageButton
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/close"
+            android:background="@color/transparent"
+            app:tint="@color/black" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingHorizontal="21dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Place the mouth tube in\nthe slot"
+            android:textColor="@color/grey"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:fontFamily="@font/mulish"/>
+        
+        <ImageView
+            android:layout_width="219dp"
+            android:layout_height="291dp"
+            android:background="@color/grey"
+            android:layout_marginTop="38dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

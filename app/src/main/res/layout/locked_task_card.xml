@@ -1,0 +1,53 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:layout_marginTop="15dp"
+    android:gravity="center"
+    android:background="@drawable/reactangle_outline_15"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_task_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7 times. 7 days."
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:includeFontPadding="false"/>
+        <TextView
+            android:id="@+id/txt_task_sub_title"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Take atleast one test for 7 days"
+            android:fontFamily="@font/mulish"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:includeFontPadding="false"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="10dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_locked2"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

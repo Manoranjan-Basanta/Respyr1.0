@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reading.ReadingHome"
+    android:orientation="vertical"
+    android:background="#F9FCFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingHorizontal="15dp"
+        android:gravity="center">
+
+        <ImageButton
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/close"
+            android:background="@color/transparent"
+            app:tint="@color/black" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bm_reading_active"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Take Test"
+                android:fontFamily="@font/poppins_semibold"
+                android:includeFontPadding="false"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/round_help"
+            android:background="@drawable/info_button_bg"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+        
+        <ImageView
+            android:id="@+id/img_connection_status"
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            android:src="@drawable/device_connected_"/>
+        <TextView
+            android:id="@+id/txt_connection_status_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Device Not Connected"
+            android:fontFamily="@font/poppins_semibold"
+            android:includeFontPadding="false"
+            android:textSize="25sp"
+            android:layout_marginTop="63dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/txt_connection_status_sub_title"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="Connect your respyr device to phone with the cable provided"
+            android:fontFamily="@font/mulish_light"
+            android:includeFontPadding="false"
+            android:textSize="12sp"
+            android:layout_marginTop="13dp"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="54dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Connected but still not detecting"
+                android:fontFamily="@font/mulish_light"
+                android:includeFontPadding="false"
+                android:textSize="12sp"
+                android:layout_marginTop="13dp"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="0dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tap_here"
+                android:fontFamily="@font/mulish_light"
+                android:includeFontPadding="false"
+                android:textSize="12sp"
+                android:layout_marginTop="13dp"
+                android:gravity="center"
+                android:textColor="@color/primary"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingHorizontal="13dp"
+            android:paddingVertical="15dp">
+            <Button
+                android:id="@+id/button_next"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:background="@drawable/rectange_rad15"
+                android:backgroundTint="@color/primary"
+                android:drawableEnd="@drawable/arrow_right1"
+                android:drawableTint="@color/white"
+                android:paddingHorizontal="24dp"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:fontFamily="@font/mulish"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

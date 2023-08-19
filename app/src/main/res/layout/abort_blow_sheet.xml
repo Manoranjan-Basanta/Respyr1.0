@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="25dp"
+    android:paddingVertical="42dp"
+    android:background="@drawable/bottom_sheet_shape"
+    android:backgroundTint="@color/white"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Opps..! Timeout"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+    <ImageView
+        android:layout_width="94dp"
+        android:layout_height="73dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/network_error"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="257dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/mulish"
+        android:text="Make sure your phone is connected to internet &amp; try again"
+        android:textColor="@color/black"
+        android:layout_marginTop="26dp"
+        android:layout_gravity="center"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/button_try_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="159dp"
+        android:maxHeight="40dp"
+        android:layout_marginTop="45dp"
+        android:text="Try Again"
+        android:textSize="15sp"
+        android:background="@drawable/rectange_rad15"
+        android:backgroundTint="@color/primary"
+        android:textAllCaps="false"
+        android:fontFamily="@font/mulish"
+        android:textColor="@color/white"
+        android:layout_gravity="center"/>
+</LinearLayout>

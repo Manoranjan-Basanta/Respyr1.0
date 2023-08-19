@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".authentication.profile_creation.lifestyle.SleepHours">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/user_profile_create_progress3"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="UselessParent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="12dp"
+                            android:paddingHorizontal="26dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:gravity="center"
+                                    android:includeFontPadding="false"
+                                    android:text="@string/lifestyle"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/primary"
+                                    android:textSize="15sp" />
+                                <include layout="@layout/user_profile_dots"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:gravity="start"
+                                android:includeFontPadding="false"
+                                android:text="Your Habits"
+                                android:layout_marginTop="37.5dp"
+                                android:textColor="@color/black"
+                                android:textSize="25sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/mulish"
+                                android:gravity="start"
+                                android:includeFontPadding="false"
+                                android:textColor="@color/grey"
+                                android:textSize="15sp"
+                                android:text="@string/this_is_used_to_get_accurate_health_status"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="42dp"
+                            android:paddingStart="17dp"
+                            android:layout_marginBottom="50dp"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:paddingHorizontal="15sp"
+                                android:background="@drawable/hobbies_card"
+                                android:paddingVertical="25sp">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/poppins_semibold"
+                                            android:text="Do You Consume\nAlcohol?"
+                                            android:textSize="18sp"
+                                            android:textColor="@color/black" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="34dp"
+                                        android:orientation="horizontal">
+
+                                        <RelativeLayout
+                                            android:layout_width="0dp"
+                                            android:layout_weight="1"
+                                            android:layout_height="match_parent">
+
+                                            <RadioGroup
+                                                android:id="@+id/rg_alcohol"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+
+                                                <RadioButton
+                                                    android:id="@+id/rd_al_1"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/mulish"
+                                                    android:minHeight="20dp"
+                                                    android:text="@string/never"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="15sp" />
+
+                                                <RadioButton
+                                                    android:id="@+id/rd_al_2"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/mulish"
+                                                    android:minHeight="20dp"
+                                                    android:text="@string/occasionally"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="15sp" />
+
+                                                <RadioButton
+                                                    android:id="@+id/rd_al_3"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/mulish"
+                                                    android:minHeight="20dp"
+                                                    android:text="@string/regularly"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="15sp" />
+                                            </RadioGroup>
+
+                                        </RelativeLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+
+                                            <ImageView
+                                                android:layout_width="146dp"
+                                                android:layout_height="137dp"
+                                                android:src="@drawable/hobbies_ic_1" />
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+
+                                    <TextView
+                                        android:id="@+id/txt_err_1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="14dp"
+                                        android:fontFamily="@font/roboto"
+                                        android:textSize="12sp"
+                                        android:gravity="start"
+                                        android:includeFontPadding="false"
+                                        android:textColor="@color/red"
+                                        android:text="This is used to get accurate health status"
+                                        />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:background="@drawable/hobbies_card"
+                                android:paddingHorizontal="15sp"
+                                android:layout_marginTop="15dp"
+                                android:paddingVertical="25sp">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/poppins_semibold"
+                                            android:text="Do You\nSmoke?"
+                                            android:textSize="18sp"
+                                            android:textColor="@color/black" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="34dp"
+                                        android:orientation="horizontal">
+
+                                        <RelativeLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1">
+
+                                            <RadioGroup
+                                                android:id="@+id/rg_smoking"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+
+                                                <RadioButton
+                                                    android:id="@+id/rb_sm_1"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/mulish"
+                                                    android:minHeight="20dp"
+                                                    android:text="@string/never"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="15sp" />
+
+                                                <RadioButton
+                                                    android:id="@+id/rb_sm_2"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/mulish"
+                                                    android:minHeight="20dp"
+                                                    android:text="@string/occasionally"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="15sp" />
+
+                                                <RadioButton
+                                                    android:id="@+id/rb_sm_3"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/mulish"
+                                                    android:text="@string/regularly"
+                                                    android:textSize="15sp"
+                                                    android:minHeight="20dp"
+                                                    android:textColor="@color/black" />
+                                            </RadioGroup>
+
+                                        </RelativeLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+
+                                            <ImageView
+                                                android:layout_width="146dp"
+                                                android:layout_height="137dp"
+                                                android:src="@drawable/hobbies_ic_3" />
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                    <TextView
+                                        android:id="@+id/txt_err_2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="14dp"
+                                        android:fontFamily="@font/roboto"
+                                        android:textSize="12sp"
+                                        android:gravity="start"
+                                        android:includeFontPadding="false"
+                                        android:textColor="@color/red"
+                                        android:text="-"
+                                        />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:background="@drawable/hobbies_card"
+                                android:paddingHorizontal="15sp"
+                                android:layout_marginTop="15dp"
+                                android:paddingVertical="25sp">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/poppins_semibold"
+                                            android:text="Do You Eat\nNon-Veg?"
+                                            android:textSize="18sp"
+                                            android:textColor="@color/black" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="34dp"
+                                        android:orientation="horizontal">
+
+                                        <RelativeLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1">
+
+                                            <RadioGroup
+                                                android:id="@+id/rg_eat"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+
+                                                <RadioButton
+                                                    android:id="@+id/rb_eat_1"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/mulish"
+                                                    android:text="@string/never"
+                                                    android:textSize="15sp"
+                                                    android:minHeight="20dp"
+                                                    android:textColor="@color/black" />
+
+                                                <RadioButton
+                                                    android:id="@+id/rb_eat_2"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/mulish"
+                                                    android:text="@string/occasionally"
+                                                    android:textSize="15sp"
+                                                    android:minHeight="20dp"
+                                                    android:textColor="@color/black" />
+
+                                                <RadioButton
+                                                    android:id="@+id/rb_eat_3"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/mulish"
+                                                    android:text="@string/regularly"
+                                                    android:textSize="15sp"
+                                                    android:minHeight="20dp"
+                                                    android:textColor="@color/black" />
+                                            </RadioGroup>
+
+                                        </RelativeLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+
+                                            <ImageView
+                                                android:layout_width="146dp"
+                                                android:layout_height="137dp"
+                                                android:src="@drawable/hobbies_ic_2" />
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                    <TextView
+                                        android:id="@+id/txt_err_3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="14dp"
+                                        android:fontFamily="@font/roboto"
+                                        android:textSize="12sp"
+                                        android:gravity="start"
+                                        android:includeFontPadding="false"
+                                        android:textColor="@color/red"
+                                        android:text="-"
+                                        />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/hobbies_card"
+                                android:paddingHorizontal="15sp"
+                                android:paddingVertical="25sp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/poppins_semibold"
+                                            android:text="Do You\nExercise?"
+                                            android:textSize="18sp"
+                                            android:textColor="@color/black" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="34dp"
+                                        android:orientation="horizontal">
+
+                                        <RelativeLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1">
+
+                                            <RadioGroup
+                                                android:id="@+id/rg_exc"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+
+                                                <RadioButton
+                                                    android:id="@+id/rb_exc_1"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/mulish"
+                                                    android:text="@string/never"
+                                                    android:textSize="15sp"
+                                                    android:minHeight="20dp"
+                                                    android:textColor="@color/black" />
+
+                                                <RadioButton
+                                                    android:id="@+id/rb_exc_2"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/mulish"
+                                                    android:text="@string/lightly"
+                                                    android:minHeight="20dp"
+                                                    android:textColor="@color/black" />
+
+                                                <RadioButton
+                                                    android:id="@+id/rb_exc_3"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/mulish"
+                                                    android:text="@string/moderately"
+                                                    android:minHeight="20dp"
+                                                    android:textColor="@color/black" />
+
+                                                <RadioButton
+                                                    android:id="@+id/rb_exc_4"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/mulish"
+                                                    android:text="@string/actively"
+                                                    android:minHeight="20dp"
+                                                    android:textColor="@color/black" />
+
+                                                <RadioButton
+                                                    android:id="@+id/rb_exc_5"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/mulish"
+                                                    android:minHeight="20dp"
+                                                    android:text="@string/very_actively"
+                                                    android:textColor="@color/black" />
+                                            </RadioGroup>
+                                        </RelativeLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+
+                                            <ImageView
+                                                android:layout_width="146dp"
+                                                android:layout_height="137dp"
+                                                android:src="@drawable/hobbies_ic_4" />
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:id="@+id/txt_err_4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="14dp"
+                                        android:fontFamily="@font/roboto"
+                                        android:textSize="12sp"
+                                        android:gravity="start"
+                                        android:includeFontPadding="false"
+                                        android:textColor="@color/red"
+                                        android:text="-" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#E4F0FF"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_height="91dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="start|center"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="13dp">
+            <Button
+                android:id="@+id/button_back"
+                android:layout_width="142dp"
+                android:layout_height="61dp"
+                android:includeFontPadding="false"
+                android:text="@string/back"
+                android:paddingHorizontal="22dp"
+                android:drawableStart="@drawable/ic_back"
+                android:drawableTint="@color/black"
+                android:elevation="0dp"
+                android:fontFamily="@font/mulish_semibold"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:background="@color/transparent"/>
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/button_next"
+                android:layout_width="142dp"
+                android:layout_height="61dp"
+                android:background="@drawable/button_small_1"
+                android:drawableEnd="@drawable/ic_next"
+                android:drawableTint="@color/white"
+                android:elevation="0dp"
+                android:fontFamily="@font/mulish_semibold"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:includeFontPadding="false"
+                android:paddingHorizontal="22dp"
+                android:text="@string/next" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

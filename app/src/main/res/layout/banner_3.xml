@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="23dp"
+    android:paddingHorizontal="22dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="176dp"
+        android:layout_centerInParent="true"
+        android:paddingVertical="17dp"
+        android:paddingHorizontal="23dp"
+        android:gravity="end"
+        android:background="@drawable/banner3">
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:gravity="start"
+           android:orientation="vertical">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Take Test.\nEarn Reward."
+               android:fontFamily="@font/poppins_semibold"
+               android:textSize="18sp"
+               android:layout_marginTop="7.5dp"
+               android:textColor="@color/white"
+               android:includeFontPadding="false"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Earn rewards by just keeping\ntrack of your health regularly"
+               android:fontFamily="@font/mulish"
+               android:textSize="10sp"
+               android:layout_marginTop="5dp"
+               android:textColor="@color/white"
+               android:includeFontPadding="false"/>
+           <Space
+               android:layout_width="0dp"
+               android:layout_height="0dp"
+               android:layout_weight="1"/>
+
+           <Button
+               android:id="@+id/button_reward_main"
+               android:layout_width="wrap_content"
+               android:layout_height="33dp"
+               android:paddingHorizontal="36dp"
+               android:background="@drawable/eclips1"
+               android:backgroundTint="#252525"
+               android:textAllCaps="false"
+               android:fontFamily="@font/mulish"
+               android:textSize="10sp"
+               android:textColor="@color/white"
+               android:text="View Rewards"/>
+       </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".daily_routine.DailyRoutinForm">
+
+
+    <TextView
+        android:id="@+id/txt_log"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:id="@+id/daily_routine_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include layout="@layout/routin_header"/>
+            <include layout="@layout/water_intake_layout"/>
+            <include layout="@layout/daily_smoking"/>
+            <include layout="@layout/alcohol_intake"/>
+            <include layout="@layout/daily_exercise"/>
+            <include layout="@layout/daily_sleep_time"/>
+            <include layout="@layout/daily_nutrition"/>
+            <include layout="@layout/daily_skip_any_meal"/>
+
+            <Button
+                android:id="@+id/button_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PROCEED"
+                android:textColor="@color/white"
+                android:background="@color/primary"
+                android:textSize="15sp"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/mulish"
+                android:paddingVertical="22dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

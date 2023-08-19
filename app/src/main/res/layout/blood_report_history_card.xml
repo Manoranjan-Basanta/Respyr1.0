@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/white"
+    android:background="@drawable/bloodhistorycard_bg"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="15dp"
+    android:layout_marginTop="8dp"
+    android:outlineAmbientShadowColor="@color/primary"
+    app:cardUseCompatPadding="true"
+    app:cardPreventCornerOverlap="false">
+    <LinearLayout
+        android:id="@+id/ll_report_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="25dp"
+        android:paddingHorizontal="15dp">
+        <RelativeLayout
+            android:layout_width="86dp"
+            android:layout_height="86dp">
+
+            <antonkozyriatskyi.circularprogressindicator.CircularProgressIndicator
+                android:id="@+id/progress_report_health_score"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                app:progressBackgroundColor="#E6E6E6"
+                app:progressBackgroundStrokeWidth="2dp"
+                app:progressColor="@color/green"
+                app:progressStrokeWidth="2dp"
+                app:textColor="@color/transparent" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txt_report_health_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="85"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/black"
+                    android:includeFontPadding="false"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="out of 100"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:includeFontPadding="false"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <View
+            android:layout_width="18dp"
+            android:layout_height="0dp"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_report_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Blood Report 1"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:includeFontPadding="false"/>
+            <TextView
+                android:id="@+id/txt_report_date_and_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Added 2 months ago"
+                android:fontFamily="@font/roboto"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/grey"
+                android:includeFontPadding="false"/>
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E4F0FF"
+                android:layout_marginTop="18dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="14dp"
+                android:gravity="end">
+                <Button
+                    android:id="@+id/button_delete_report"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:text="Delete"
+                    android:background="@color/transparent"
+                    android:fontFamily="@font/mulish"
+                    android:paddingHorizontal="10dp"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:textColor="@color/grey"
+                    android:drawableStart="@drawable/delete"/>
+                <Button
+                    android:id="@+id/button_view_report"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:text="View"
+                    android:background="@color/transparent"
+                    android:fontFamily="@font/mulish"
+                    android:paddingHorizontal="10dp"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:textColor="@color/primary"
+                    android:drawableStart="@drawable/view"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

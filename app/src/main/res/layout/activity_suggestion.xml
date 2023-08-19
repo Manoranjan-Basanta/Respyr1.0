@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reading.Suggestion"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="20dp"
+                android:gravity="center"
+                android:background="#927CFF">
+                <ImageButton
+                    android:id="@+id/button_back"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/back"
+                    android:background="@color/transparent"
+                    app:tint="@color/white" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Suggestions"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textAllCaps="true"/>
+                <ImageButton
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/back"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+            <include layout="@layout/suggestion_header"/>
+
+            <include layout="@layout/suggestion_page_workouts" />
+
+            <include layout="@layout/suggestion_page_others"/>
+            <include layout="@layout/food_suggestion"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

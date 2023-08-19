@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="20dp"
+    android:layout_marginTop="43dp"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/suggestion_stroke_bg"
+        android:padding="15dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/glass3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Water Intake Suggestion"
+            android:includeFontPadding="false"
+            android:textColor="#3B258D"
+            android:gravity="start"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+
+            android:fontFamily="@font/poppins_semibold"
+            android:textAllCaps="false"/>
+        <TextView
+            android:id="@+id/water_intake_suggestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="These food intake suggestions are based your overall health score along with your lifestyle, nutrition &amp; BMI score."
+            android:includeFontPadding="false"
+            android:textColor="#3B258D"
+            android:gravity="start"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/mulish"
+            android:textAllCaps="false"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="26dp"
+            android:src="@drawable/sleeping"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sleep Suggestion"
+            android:includeFontPadding="false"
+            android:textColor="#3B258D"
+            android:gravity="start"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+
+            android:fontFamily="@font/poppins_semibold"
+            android:textAllCaps="false"/>
+        <TextView
+            android:id="@+id/sleep_suggestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="These food intake suggestions are based your overall health score along with your lifestyle, nutrition &amp; BMI score."
+            android:includeFontPadding="false"
+            android:textColor="#3B258D"
+            android:gravity="start"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/mulish"
+            android:textAllCaps="false"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="26dp"
+            android:src="@drawable/running"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Excerise Suggestion"
+            android:includeFontPadding="false"
+            android:textColor="#3B258D"
+            android:gravity="start"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textAllCaps="false"/>
+        <TextView
+            android:id="@+id/exercise_suggestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="These food intake suggestions are based your overall health score along with your lifestyle, nutrition &amp; BMI score."
+            android:includeFontPadding="false"
+            android:textColor="#3B258D"
+            android:gravity="start"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/mulish"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/suggestion_stroke_bg"
+        android:padding="15dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@drawable/bmi1"/>
+
+        <TextView
+            android:id="@+id/txt_bmi_sggestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="These food intake suggestions are based your overall health score along with your lifestyle, nutrition &amp; BMI score."
+            android:includeFontPadding="false"
+            android:textColor="#3B258D"
+            android:gravity="start"
+            android:textSize="15sp"
+            android:layout_marginTop="26dp"
+            android:fontFamily="@font/mulish"
+            android:textAllCaps="false"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMI Monitor Suggestion"
+            android:includeFontPadding="false"
+            android:textColor="#3B258D"
+            android:gravity="start"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+
+</LinearLayout>

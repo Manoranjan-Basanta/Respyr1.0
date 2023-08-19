@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".authentication.profile_creation.lifestyle.LifeStyleScore">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/dark1"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/user_profile_create_progress"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/bg_shape_one">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:fillViewport="true">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/lifestyle_bg">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|bottom"
+                            android:orientation="vertical"
+                            android:paddingTop="30dp">
+
+                            <RelativeLayout
+                                android:layout_width="212dp"
+                                android:layout_height="212dp">
+                                <antonkozyriatskyi.circularprogressindicator.CircularProgressIndicator
+                                    android:id="@+id/health_score"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    app:progressBackgroundStrokeWidth="3dp"
+                                    app:progressBackgroundColor="@color/white"
+                                    app:progressStrokeWidth="3dp"
+                                    app:textColor="@color/transparent"
+                                    />
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_centerInParent="true"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Your Health Score"
+                                        android:fontFamily="@font/mulish"
+                                        android:textSize="12sp"
+                                        android:textColor="@color/grey"/>
+                                    <TextView
+                                        android:id="@+id/txt_health_score"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="85"
+                                        android:textSize="75sp"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:textColor="@color/black"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="out of 100"
+                                        android:textSize="12sp"
+                                        android:fontFamily="@font/roboto"
+                                        android:textColor="@color/black"
+                                        />
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Based on your medical history"
+                                android:textSize="12sp"
+                                android:layout_marginTop="19dp"
+                                android:fontFamily="@font/mulish"
+                                android:textColor="@color/primary"
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+
+                            android:gravity="center|bottom"
+                            android:layout_weight="1">
+                            <ImageView
+                                android:layout_width="332dp"
+                                android:layout_height="136dp"
+                                android:src="@drawable/health_score_illustration"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:paddingVertical="20dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt_score_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="You’re Doing Good!"
+                            android:textColor="@color/grey"
+                            android:textSize="25sp" />
+                        <TextView
+                            android:id="@+id/txt_score_description"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="A little off from healthy range... But don't worry\nThat's why we are here to help "
+                            android:gravity="center"
+                            android:fontFamily="@font/mulish"
+                            android:layout_marginTop="10dp"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </ScrollView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/transparent"
+        android:layout_height="91dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="start|center"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="13dp">
+
+            <Button
+                android:id="@+id/button_next"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:background="@drawable/button_lg_2"
+                android:elevation="0dp"
+                android:fontFamily="@font/mulish_semibold"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:includeFontPadding="false"
+                android:paddingHorizontal="22dp"
+                android:text="Finish Up" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

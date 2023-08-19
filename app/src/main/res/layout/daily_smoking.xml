@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E4F0FF"
+    android:paddingVertical="24dp"
+    android:paddingHorizontal="20dp"
+    android:layout_marginTop="49dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Your HABITS"
+        android:textAllCaps="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:includeFontPadding="false"
+        android:textColor="@color/primary"
+        android:textSize="12sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="40dp">
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/smoke"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_light"
+                    android:background="@drawable/eclips1"
+                    android:backgroundTint="@color/darK_grey"
+                    android:text="11 Days Streak"
+                    android:paddingHorizontal="16dp"
+                    android:gravity="center"
+                    android:drawablePadding="10dp"
+                    android:paddingVertical="5dp"
+                    android:drawableStart="@drawable/streak"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="How much did you smoke ?"
+                android:layout_marginTop="30dp"
+                android:includeFontPadding="false"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mulish"
+                android:text="Track your daily routine to keep up with your lifestyle score including insights &amp; suggestions to improve"
+                android:layout_marginTop="10dp"
+                android:includeFontPadding="false"
+                android:textColor="@color/grey"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="50dp">
+
+            <ImageButton
+                android:id="@+id/image_button_smoke_minus"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@drawable/eclips1"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/minus"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txt_cigarettes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="0"
+                    android:layout_marginTop="10dp"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/secondary"
+                    android:textSize="50sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="Cigarettes"
+                    android:layout_marginTop="10dp"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/secondary"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <ImageButton
+                android:id="@+id/image_button_smoke_plus"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@drawable/eclips1"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/add2"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Dashboard">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/mulish"
+        android:visibility="gone"
+        android:id="@+id/txt_log"/>
+    <include android:visibility="gone" layout="@layout/result_page_appbar"/>
+    <include  layout="@layout/appbar_main"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            app:shimmer_base_color="@color/disabled"
+            app:shimmer_colored="true">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:background="@drawable/health_score_gradient">
+                       <include layout="@layout/result_page_references"/>
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content">
+                           <include layout="@layout/result_page_scores_in_details"/>
+                       </LinearLayout>
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content">
+                           <include layout="@layout/result_page_lifestyle"/>
+                       </LinearLayout>
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content">
+                           <include layout="@layout/result_page_health_score1"/>
+                       </LinearLayout>
+                   </LinearLayout>
+                   <LinearLayout
+                       android:id="@+id/button_take_test"
+                       android:layout_width="80dp"
+                       android:layout_height="80dp"
+                       android:layout_alignParentEnd="true"
+                       android:layout_alignParentBottom="true"
+                       android:layout_marginBottom="10dp"
+                       android:layout_marginEnd="16dp"
+                       android:background="@drawable/start_lg"
+                       android:orientation="horizontal" />
+               </RelativeLayout>
+           </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+    </ScrollView>
+</LinearLayout>

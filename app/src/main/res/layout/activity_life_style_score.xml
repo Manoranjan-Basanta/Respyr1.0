@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".authentication.profile_creation.lifestyle.LifeStyleScore">
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:shimmer_base_color="@color/disabled"
+        app:shimmer_colored="true"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_log"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <include layout="@layout/user_profile_create_progress4"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:fillViewport="true">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_height="0dp"
+                                android:layout_weight="2">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Your lifestyle score is"
+                                    android:fontFamily="@font/mulish"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/grey"
+                                    android:layout_marginTop="51dp"
+                                    android:gravity="center"
+                                    android:includeFontPadding="false"
+                                    android:textSize="15sp"/>
+
+                                <TextView
+                                    android:id="@+id/txt_life_style_score"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="43dp"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:includeFontPadding="false"
+                                    android:text="100"
+                                    android:textColor="@color/black"
+                                    android:textSize="75dp" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="out of 100"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/roboto"
+                                    android:textColor="@color/black"
+                                    android:gravity="center"
+                                    android:includeFontPadding="false"
+                                    android:textSize="15sp"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="28dp"
+                                    android:layout_marginBottom="40dp"
+                                    android:gravity="center">
+
+
+
+                                    <RadioButton
+                                        android:id="@+id/star1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:enabled="true"
+                                        android:button="@drawable/start_rating_bg"/>
+                                    <View
+                                        android:layout_width="11dp"
+                                        android:layout_height="0dp"/>
+
+                                    <RadioButton
+                                        android:id="@+id/star2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:enabled="true"
+                                        android:button="@drawable/start_rating_bg"/>
+                                    <View
+                                        android:layout_width="11dp"
+                                        android:layout_height="0dp"/>
+
+                                    <RadioButton
+                                        android:id="@+id/star3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:enabled="true"
+                                        android:button="@drawable/start_rating_bg"
+                                        />
+                                    <View
+                                        android:layout_width="11dp"
+                                        android:layout_height="0dp"/>
+
+                                    <RadioButton
+                                        android:id="@+id/star4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:enabled="true"
+                                        android:button="@drawable/start_rating_bg"/>
+                                    <View
+                                        android:layout_width="11dp"
+                                        android:layout_height="0dp"/>
+                                    <RadioButton
+                                        android:id="@+id/star5"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:enabled="true"
+                                        android:button="@drawable/start_rating_bg"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:gravity="center|bottom"
+                                    android:layout_weight="1">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="160dp"
+                                        android:src="@drawable/lifestyle_illustration"/>
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:paddingVertical="20dp"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/txt_life_style_message"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:text="Great!"
+                                    android:includeFontPadding="false"
+                                    android:textColor="@color/grey"
+                                    android:textSize="25sp" />
+                                <TextView
+                                    android:id="@+id/txt_life_style_sub_message"
+                                    android:layout_width="wrap_content"
+                                    android:maxWidth="270dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="A little off from healthy range... But don't worry\nThat's why we are here to help "
+                                    android:gravity="center"
+                                    android:fontFamily="@font/mulish"
+                                    android:layout_marginTop="10dp"
+                                    android:textSize="12sp"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </ScrollView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/transparent"
+                android:layout_height="91dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="start|center"
+                    android:layout_height="match_parent"
+                    android:paddingHorizontal="13dp">
+
+                    <Button
+                        android:id="@+id/button_next"
+                        android:layout_width="match_parent"
+                        android:layout_height="61dp"
+                        android:background="@drawable/button_lg_1"
+                        android:elevation="0dp"
+                        android:fontFamily="@font/mulish_semibold"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:includeFontPadding="false"
+                        android:paddingHorizontal="22dp"
+                        android:text="Continue To Medical History" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+</LinearLayout>

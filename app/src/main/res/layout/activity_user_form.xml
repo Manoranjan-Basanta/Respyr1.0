@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".reading.UserForm">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F9FCFF"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="30dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/respyr_logo"/>
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Personal Information"
+                    android:textSize="18sp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:includeFontPadding="false"
+                    android:fontFamily="@font/poppins_semibold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fill in the below details to get started with your test"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/grey"
+                    android:includeFontPadding="false"
+                    android:fontFamily="@font/mulish"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:gravity="center"
+                    android:paddingHorizontal="11dp"
+                    android:background="@drawable/profile_edit_text_bg">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/name_icon"
+                        app:tint="@color/grey" />
+                    <Space
+                        android:layout_width="9dp"
+                        android:layout_height="0dp"/>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Name"
+                            android:textSize="12sp"
+                            android:textColor="@color/grey"
+                            android:fontFamily="@font/mulish"/>
+                        <Space
+                            android:layout_width="9dp"
+                            android:layout_height="9dp"/>
+                        <EditText
+                            android:id="@+id/editTextName"
+                            android:layout_width="match_parent"
+                            android:background="@color/transparent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/grey"
+                            android:fontFamily="@font/roboto"
+                            android:textColor="@color/grey"
+                            android:hint="Enter your name"
+                            android:textSize="15sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:gravity="center"
+                    android:paddingHorizontal="11dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/profile_edit_text_bg">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_gender1"
+                        app:tint="@color/grey" />
+                    <Space
+                        android:layout_width="9dp"
+                        android:layout_height="0dp"/>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Select Gender"
+                            android:textSize="12sp"
+                            android:textColor="@color/grey"
+                            android:fontFamily="@font/mulish"/>
+                        <Space
+                            android:layout_width="9dp"
+                            android:layout_height="9dp"/>
+                        <RadioGroup
+                            android:id="@+id/radioGroupGender"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radioButtonMale"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Male"
+                                android:fontFamily="@font/roboto"
+                                android:textColor="@color/grey"
+                                android:textSize="15sp"/>
+                            <Space
+                                android:layout_width="20dp"
+                                android:layout_height="0dp"/>
+
+                            <RadioButton
+                                android:id="@+id/radioButtonFemale"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Female"
+                                android:fontFamily="@font/roboto"
+                                android:textColor="@color/grey"
+                                android:textSize="15sp"/>
+
+                        </RadioGroup>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:paddingHorizontal="11dp"
+                    android:background="@drawable/profile_edit_text_bg">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_height1"
+                        app:tint="@color/grey" />
+                    <Space
+                        android:layout_width="9dp"
+                        android:layout_height="0dp"/>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="start|center"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Height"
+                            android:textSize="12sp"
+                            android:textColor="@color/grey"
+                            android:fontFamily="@font/mulish"/>
+                        <Space
+                            android:layout_width="9dp"
+                            android:layout_height="9dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <EditText
+                                android:id="@+id/editTextHeight"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:background="@color/transparent"
+                                android:textColorHint="@color/grey"
+                                android:fontFamily="@font/roboto"
+                                android:inputType="numberDecimal"
+                                android:textColor="@color/grey"
+                                android:hint="Enter your height"
+                                android:textSize="15sp"/>
+
+                            <RadioGroup
+                                android:id="@+id/radio_height_type"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <RadioButton
+                                    android:id="@+id/cm"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="12sp"
+                                    android:checked="true"
+                                    android:fontFamily="@font/mulish"
+                                    android:text="Cm"/>
+                                <RadioButton
+                                    android:id="@+id/ft"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="12sp"
+                                    android:fontFamily="@font/mulish"
+                                    android:text="Ft"/>
+                            </RadioGroup>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:gravity="center"
+                    android:paddingHorizontal="11dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/profile_edit_text_bg">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_weight1" />
+                    <Space
+                        android:layout_width="9dp"
+                        android:layout_height="0dp"/>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Weight ( kg)"
+                            android:textSize="12sp"
+                            android:textColor="@color/grey"
+                            android:fontFamily="@font/mulish"/>
+                        <Space
+                            android:layout_width="9dp"
+                            android:layout_height="9dp"/>
+                        <EditText
+                            android:id="@+id/editTextWeight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:textColorHint="@color/grey"
+                            android:fontFamily="@font/roboto"
+                            android:textColor="@color/grey"
+                            android:inputType="numberDecimal"
+                            android:hint="Enter your weight"
+                            android:textSize="15sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:gravity="center"
+                    android:paddingHorizontal="11dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/profile_edit_text_bg">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_age1" />
+                    <Space
+                        android:layout_width="9dp"
+                        android:layout_height="0dp"/>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Age"
+                            android:textSize="12sp"
+                            android:textColor="@color/grey"
+                            android:fontFamily="@font/mulish"/>
+                        <Space
+                            android:layout_width="9dp"
+                            android:layout_height="9dp"/>
+                        <EditText
+                            android:id="@+id/editTextAge"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:textColorHint="@color/grey"
+                            android:fontFamily="@font/roboto"
+                            android:textColor="@color/grey"
+                            android:hint="Enter your age"
+                            android:inputType="numberDecimal"
+                            android:textSize="15sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/buttonSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button_primary_lg"
+                    android:text="Let’s Go"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/mulish"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

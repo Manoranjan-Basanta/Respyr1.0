@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".daily_routine.SearchMeal">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingHorizontal="13dp"
+        android:gravity="center">
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/back"
+            android:background="@color/transparent"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="ADD MEAL"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_semibold"
+            android:includeFontPadding="false"
+            android:textColor="@color/black"/>
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:visibility="invisible"
+            android:src="@drawable/back"/>
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1">
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:scrollbars="none">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:paddingHorizontal="13dp"
+               android:orientation="vertical">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:layout_marginTop="25dp"
+                   android:background="@drawable/eclips1"
+                   android:gravity="center"
+                   android:layout_marginBottom="30dp"
+                   android:paddingHorizontal="20dp"
+                   android:backgroundTint="#F0F0F0">
+
+                   <ImageView
+                       android:layout_width="24dp"
+                       android:layout_height="24dp"
+                       android:src="@drawable/search"/>
+                   <EditText
+                       android:id="@+id/search_food_edit_text"
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:layout_weight="1"
+                       android:paddingVertical="13dp"
+                       android:paddingHorizontal="13sp"
+                       android:fontFamily="@font/poppins_semibold"
+                       android:textSize="15sp"
+                       android:hint="What did you eat?"
+                       android:textColorHighlight="#C7C6CE"
+                       android:textColor="@color/black"
+                       android:includeFontPadding="false"
+                       android:background="@color/transparent"/>
+                   <ImageButton
+                       android:id="@+id/button_clear_edit_text"
+                       android:layout_width="24dp"
+                       android:layout_height="24dp"
+                       android:visibility="gone"
+                       android:background="@color/transparent"
+                       android:src="@drawable/close"
+                       app:tint="@color/black" />
+               </LinearLayout>
+               <include layout="@layout/search_food_layout"/>
+               <include layout="@layout/added_food_layout"/>
+               <include layout="@layout/frequently_added_food_layout"/>
+               <include layout="@layout/food_catogories_layout"/>
+           </LinearLayout>
+       </ScrollView>
+   </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/button_next"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@color/primary">
+        <TextView
+            android:id="@+id/txt_data_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Add meals (1)"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:fontFamily="@font/mulish"
+            android:includeFontPadding="false"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reward.Reward"
+    android:orientation="vertical"
+    android:background="@color/primary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/bottom_sheet_shape"
+        android:backgroundTint="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="top|center">
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="4dp"
+            app:cardBackgroundColor="#535359"
+            app:cardElevation="0dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="25dp"/>
+        <ScrollView
+            android:id="@+id/scroll_reward_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:scrollbarAlwaysDrawVerticalTrack="false"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tasks"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="25sp"
+                        android:textColor="@color/black"
+                        android:includeFontPadding="false"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:text="View All Tasks"
+                        android:paddingHorizontal="24dp"
+                        android:paddingVertical="10dp"
+                        android:fontFamily="@font/mulish"
+                        android:textAllCaps="false"
+                        android:textSize="12sp"
+                        android:textColor="#535359"
+                        android:background="@drawable/button_outline_1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <include layout="@layout/task_card"/>
+                    <include layout="@layout/task_card2"/>
+                </LinearLayout>
+                <include layout="@layout/rewards_list"/>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+
+    <uses-feature
+        android:name="android.hardware.usb.host"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Respyr"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".Dashboard"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".reading.Result2"
+            android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".authentication.profile_creation.lifestyle.Food"
+            android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".authentication.profile_creation.TermsConditions"
+            android:exported="true" />
+        <activity
+            android:name=".Test2"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".results.DetailedLifeStyle"
+            android:exported="true" />
+        <activity
+            android:name=".reading.Expand"
+            android:exported="true" />
+        <activity
+            android:name=".reading.BeforeReading"
+            android:exported="true" />
+        <activity
+            android:name=".reading.Tempdashboard"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".reading.DeviceReady"
+            android:exported="true" />
+        <activity
+            android:name=".reading.BlowActivity"
+            android:exported="true" />
+        <activity
+            android:name=".reading.BloodPressure"
+            android:exported="true" />
+        <activity
+            android:name=".reading.food_breakup.FoodBreakUP"
+            android:exported="true" />
+        <activity
+            android:name=".reading.SelectUser"
+            android:exported="true" />
+        <activity
+            android:name=".authentication.Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".reading.UserForm"
+            android:exported="true" />
+        <activity
+            android:name=".reading.Suggestion"
+            android:exported="false" />
+        <activity
+            android:name=".daily_routine.SearchMeal"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".daily_routine.DailyRoutinForm"
+            android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".Test"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".notification.Main"
+            android:exported="true" />
+        <activity
+            android:name=".profile.user.SelectProfile"
+            android:exported="false" />
+        <activity
+            android:name=".reading.CheckList"
+            android:exported="true" />
+        <activity
+            android:name=".reading.ReadingHome"
+            android:exported="true" />
+        <activity
+            android:name=".reading.SelectProfile"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".reward.AllTasks"
+            android:exported="true" />
+        <activity
+            android:name=".reward.Reward"
+            android:exported="true" />
+        <activity
+            android:name=".profile.user.PersonalInformation"
+            android:exported="true" />
+        <activity
+            android:name=".reading.Result"
+            android:exported="true" />
+        <activity
+            android:name=".reading.Analyzing"
+            android:exported="true" />
+        <activity
+            android:name=".profile.user.ProfileData"
+            android:exported="true" />
+        <activity
+            android:name=".profile.history.ViewBloodReport"
+            android:exported="false" />
+        <activity
+            android:name=".profile.history.BloodReportHistory"
+            android:exported="true" />
+        <activity
+            android:name=".authentication.profile_creation.lifestyle.Hobbies"
+            android:exported="false" />
+        <activity
+            android:name=".authentication.profile_creation.lifestyle.Water"
+            android:exported="true" />
+        <activity
+            android:name=".authentication.profile_creation.lifestyle.SleepHours"
+            android:exported="true" />
+        <activity
+            android:name=".profile.user.AddNewProfile"
+            android:exported="true" />
+        <activity
+            android:name=".authentication.login.Name"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".authentication.login.SelectProfile"
+            android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".authentication.profile_creation.medical_data.Conditions"
+            android:exported="true" />
+        <activity
+            android:name=".authentication.profile_creation.medical_data.Lungs"
+            android:exported="true" />
+        <activity
+            android:name=".profile.Profile"
+            android:exported="true" >
+
+        </activity>
+
+        <activity
+            android:name=".home.Home"
+            android:exported="true" />
+        <activity
+            android:name=".authentication.profile_creation.medical_data.HealthScore"
+            android:exported="true" />
+        <activity
+            android:name=".authentication.profile_creation.medical_data.Liver"
+            android:exported="false" />
+        <activity
+            android:name=".authentication.profile_creation.medical_data.Kidney"
+            android:exported="false" />
+        <activity
+            android:name=".authentication.profile_creation.medical_data.Lipid"
+            android:exported="false" />
+        <activity
+            android:name=".authentication.profile_creation.medical_data.Diabetic"
+            android:exported="true" />
+        <activity
+            android:name=".authentication.profile_creation.medical_data.BloodTest"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".authentication.profile_creation.lifestyle.LifeStyleScore"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".authentication.profile_creation.lifestyle.MentalConditions"
+            android:exported="true" />
+        <activity
+            android:name=".authentication.profile_creation.personal.BMI"
+            android:exported="true" />
+        <activity
+            android:name=".authentication.profile_creation.personal.Weight"
+            android:exported="false" />
+        <receiver
+            android:name=".NetworkChangeReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name=".authentication.profile_creation.personal.Height"
+            android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".authentication.profile_creation.ProfileCreationSuccess"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".authentication.profile_creation.personal.Age"
+            android:exported="true" />
+        <activity
+            android:name=".authentication.profile_creation.personal.Gender"
+            android:exported="true" />
+        <activity
+            android:name=".authentication.login.ExistingUser"
+            android:exported="true" />
+        <activity
+            android:name=".authentication.profile_creation.NewUser"
+            android:exported="true" />
+        <activity
+            android:name=".authentication.login.OtpVerification"
+            android:exported="false" />
+        <activity
+            android:name=".authentication.login.Login"
+            android:exported="true" />
+        <activity
+            android:name=".authentication.Welcome"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+        </activity>
+        <service
+            android:name=".reading.UsbService"
+            android:enabled="true" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+</manifest>
